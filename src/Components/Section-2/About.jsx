@@ -46,7 +46,7 @@ const WhoWeAre = () => {
         <img src='assets/RobotAssets/robot hand.png' alt='WhoWeAre' className='w-[20vw] sm:w-[50vw] mr-[10vw] object-cover' />
       </div>
 
-      <hr className='ml-[32vw] w-[60vw] mt-[10vh]'/> 
+      <hr className='ml-[8vw] w-[84vw] mt-[10vh]'/> 
 
     </div>
   )
