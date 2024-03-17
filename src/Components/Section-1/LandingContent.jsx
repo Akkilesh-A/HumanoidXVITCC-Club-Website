@@ -8,7 +8,7 @@ const LandingContent = () => {
         <h3 className='text-white text-3xl font-semibold'>Shaping Tomorrrow, Today!</h3>
       </div>
       <div className='z-0 pt-24 pr-24 flex items-end  sm:justify-center  animate-bounce '> 
-        <img src='src/assets/robot.png' alt='robot' className='w-[20vw] h-[20vw] object-contain' />
+        <img src='assets/robot.png' alt='robot' className='w-[20vw] h-[20vw] object-contain' />
       </div>
     </div>
   )
