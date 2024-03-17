@@ -32,14 +32,14 @@ const ImageSlides = () => {
     }
 
     return (
-        <div className='mt-8 mr-[15vw] ml-[15vw] mb-[10vh]'>
-            <div className='flex items-center' >
+        <div className='mt-8 mr-[15vw] sm:mr-[5vw] sm:ml-[5vw] ml-[15vw] mb-[10vh]'>
+            <div className='flex items-center justify-center'>
                 <div className='w-[10vw] flex justify-end'>
                     <svg  width="28" height="32" viewBox="0 0 28 32" fill="none" xmlns="http://www.w3.org/2000/svg" onClick={current>0?func_left:null}>
                         <path d="M1.75974 17.8836C0.151164 16.9109 0.151161 14.5776 1.75974 13.6049L23.3699 0.538092C25.036 -0.469368 27.1635 0.730352 27.1635 2.67741L27.1635 28.8111C27.1635 30.7582 25.036 31.9579 23.3699 30.9504L1.75974 17.8836Z" fill={current>0?"white":"#5E5E5E"} />
                     </svg>
                 </div>           
-                <div className='w-[60vw] flex flex-col items-center justify-center'>
+                <div className='w-[60vw] sm:mr-[5vw] sm:ml-[5vw]  flex flex-col items-center justify-center'>
                     {pictures.map(createPictureCard)}
                 </div>
                 <div className='w-[10vw]'>

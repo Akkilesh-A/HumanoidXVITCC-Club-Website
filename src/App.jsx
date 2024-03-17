@@ -4,14 +4,18 @@ import LandingContent from './Components/Section-1/LandingContent'
 import Header from './Components/Header'
 import About from './Components/Section-2/About'
 import Obs from './Components/OBs/Obs'
+import ImageSlider from './Components/Section-3/ImageSlider'
+import SynthetixBanner from './Components/Section-4/SynthetixBanner'
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 const App = () => {
   return (
-    <div className='bg-gradient-to-b from-stone-900 to-stone-800'>
+    <div className='bg-gradient-to-b from-stone-900 to-black'>
       <Header />
       <LandingContent />
-      <About />  
+      <About /> 
+      <ImageSlider />
+      <SynthetixBanner /> 
       <Obs />
       <Footer />
     </div>
