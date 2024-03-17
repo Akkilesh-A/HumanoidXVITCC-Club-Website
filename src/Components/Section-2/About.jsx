@@ -9,7 +9,7 @@ const WhoWeAre = () => {
 
       <div className='flex sm:flex-col items-center justify-center '>
         <div className='px-[8vw] flex flex-col  z-0 justify-center'>
-              <h1 className='text-[#2ae8d1] text-5xl pb-4 font-bold'>Who are we?</h1>
+              <h1 className='text-[#178376] text-5xl pb-4 font-bold'>Who are we?</h1>
               <h3 className='text-white text-2xl'>We are a group of like minded individuals promoting <span className=' font-semibold'>Humanoid Robotics</span> in VIT,Chennai</h3>
         </div>
         <img src='assets/sheldon_logo.png' alt='WhoWeAre' className='w-[20vw] sm:w-[50vw] mr-[10vw] object-cover' />
@@ -25,7 +25,7 @@ const WhoWeAre = () => {
           <img src='assets/Departments/dept-3.png' alt='Departments' className='w-[15vw] h-auto' />        
         </div>
         <div className='flex flex-col pt-[5vh] z-0 text-white sm:mb-16 '>
-          <h1 className='text-[#2ae8d1] text-5xl pb-4 font-bold'>What do we have?</h1>
+          <h1 className='text-[#178376] text-5xl pb-4 font-bold'>What do we have?</h1>
           <div className='pl-8'>
             <h3 className='text-white text-2xl  font-semibold'>We oversee 4 departments </h3> 
             <h3 className='text-2xl'>Design & Automation</h3>
@@ -40,7 +40,7 @@ const WhoWeAre = () => {
 
       <div className='flex sm:flex-col items-center justify-center '>
         <div className='px-[8vw] sm:pb-8 flex flex-col  z-0 justify-center'>
-              <h1 className='text-[#2ae8d1] text-5xl pb-4 font-bold'>What do we do?</h1>
+              <h1 className='text-[#178376] text-5xl pb-4 font-bold'>What do we do?</h1>
               <h3 className=' text-white text-2xl'>Our mission is to innovate in humanoid robotics, creating many more bots for everyday community and home use.</h3>
         </div>
         <img src='assets/RobotAssets/robot hand.png' alt='WhoWeAre' className='w-[20vw] sm:w-[50vw] mr-[10vw] object-cover' />

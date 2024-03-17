@@ -3,7 +3,7 @@ import React from 'react'
 const SynthetixBanner = () => {
   return (
     <div className='flex justify-center pb-8'>
-        <div className='w-[70vw] h-[50vh] sm:h-[20vh] bg-[#2ae8d1] flex lg:flex-col rounded-xl'>
+        <div className='w-[70vw] h-[50vh] sm:h-[20vh] bg-[#178376] flex lg:flex-col rounded-xl'>
             <div className='flex flex-col p-16 lg:p-8 lg:items-center'>
                 <h1 className='mxl:text-7xl text-4xl sm:text-4xl font-bold text-white'>SYNTHETIX'24</h1>
                 <h4 className='text-black text-xl mxl:text-2xl  font-semibold'>THE FUTURE IS HERE!</h4>
