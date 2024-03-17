@@ -10,7 +10,7 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 const App = () => {
   return (
-    <div className='bg-gradient-to-b from-stone-900 to-black'>
+    <div className='custom-font bg-gradient-to-b from-stone-900 to-black'>
       <Header />
       <LandingContent />
       <About /> 
