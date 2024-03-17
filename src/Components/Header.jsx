@@ -10,7 +10,7 @@ const Header = () => {
           </div>
           <div className='flex items-center justify-end w-[85vw]'>
               <a href='#' className='px-[1vw]'>About</a>
-              <a href='#' className='px-[1vw]'></a>
+              <a href='#' className='px-[1vw]'>Achievements</a>
               <a className='px-[1vw]'>Projects</a>
               <a className='px-[1vw]'>OBs</a>
           </div>
