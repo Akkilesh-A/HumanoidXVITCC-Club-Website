@@ -45,19 +45,19 @@ const pictures = [
       id: 8,
       imgURL: 'assets/OBs23/ElectricalHeads/TechHead23.jpg',
       dept: "Technical Head",
-      text: "Electrical Heads",
+      text: "Project Heads",
     },
     {
       id: 9,
       imgURL: 'assets/OBs23/DeptHeads/ManagementHead23.jpg',
       dept: "Management Head",
-      text: "Department Heads",
+      text: "Project Heads",
     },
     {
       id: 10,
       imgURL: 'assets/OBs23/ElectricalHeads/ProgrammingHead23.jpg',
       dept: "Programming Head",
-      text: "Electrical Heads",
+      text: "Project Heads",
     },
     {
       id: 11,
@@ -69,14 +69,14 @@ const pictures = [
       id: 12,
       imgURL: 'assets/OBs23/DeptHeads/Design&ContentHead23.jpg',
       dept: "Design & Content Head",
-      text: "Department Heads",
+      text: "Management Heads",
     },
     
     {
       id: 7,
       imgURL: 'assets/OBs23/DeptHeads/MarketingHead23.jpg',
       dept: "Marketing Head",
-      text: "Department Heads",
+      text: "Management Heads",
     },
 ]
 
