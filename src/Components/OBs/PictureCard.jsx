@@ -2,7 +2,7 @@ import React,{ useState }  from 'react'
 import pictures from './Pictures.jsx'
 
 //The menu items
-const MenuItems=["All","Faculty","Club Advisories","Cabinet Leads","Electrical Heads","Department Heads"];
+const MenuItems=["All","Faculty","Club Advisories","Cabinet Leads","Project Heads","Department Heads"];
 
 const PictureCard = () => {
   
