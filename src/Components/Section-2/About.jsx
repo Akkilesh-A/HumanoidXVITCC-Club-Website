@@ -10,7 +10,7 @@ const WhoWeAre = () => {
       <div className='flex sm:flex-col items-center justify-center '>
         <div className='px-[8vw] flex flex-col  z-0 justify-center'>
               <h1 className='text-[#178376] text-5xl pb-4 font-bold'>Who are we?</h1>
-              <h3 className='text-white text-2xl'>We are a group of like minded individuals promoting <span className=' font-semibold'>Humanoid Robotics</span> in VIT,Chennai</h3>
+              <h3 className='sm:pl-8 text-white text-2xl'>We are a group of like minded individuals promoting <span className=' font-semibold'>Humanoid Robotics</span> in VIT,Chennai</h3>
         </div>
         <img src='assets/sheldon_logo.png' alt='WhoWeAre' className='w-[20vw] sm:w-[50vw] mr-[10vw] object-cover' />
       </div>
@@ -41,12 +41,12 @@ const WhoWeAre = () => {
       <div className='flex sm:flex-col items-center justify-center '>
         <div className='px-[8vw] sm:pb-8 flex flex-col  z-0 justify-center'>
               <h1 className='text-[#178376] text-5xl pb-4 font-bold'>What do we do?</h1>
-              <h3 className=' text-white text-2xl'>Our mission is to innovate in humanoid robotics, creating many more bots for everyday community and home use.</h3>
+              <h3 className='sm:pl-8 text-white text-2xl'>Our mission is to innovate in humanoid robotics, creating many more bots for everyday community and home use.</h3>
         </div>
         <img src='assets/RobotAssets/robot hand.png' alt='WhoWeAre' className='w-[20vw] sm:w-[50vw] mr-[10vw] object-cover' />
       </div>
 
-      <hr className='ml-[32vw] w-[60vw] my-[10vh]'/> 
+      <hr className='ml-[32vw] w-[60vw] mt-[10vh]'/> 
 
     </div>
   )
