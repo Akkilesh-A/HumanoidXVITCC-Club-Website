@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-.custom-font{
+.whole-website{
     font-family: poppins;
+    background-color: #000000;
+    background-image: url("https://www.transparenttextures.com/patterns/axiom-pattern.png");
+}
+
+.texture-bg{
+    background-image: url("https://www.transparenttextures.com/patterns/batthern.png");
+}
+
+.header-bg{
+    background-image: url("https://www.transparenttextures.com/patterns/gplay.png");
 }
