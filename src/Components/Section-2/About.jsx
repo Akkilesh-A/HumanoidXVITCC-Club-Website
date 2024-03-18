@@ -19,10 +19,10 @@ const WhoWeAre = () => {
 
 
       <div className='flex sm:flex-col ml-[8vw] w-[84vw] h-[50vh] justify-around items-center'>
-        <div className='sm:order-1 animate-bounce flex w-[40vw] items-center justify-center '>
-          <img src='assets/Departments/dept-1.png' alt='Departments' className='w-[15vw] h-auto' />
-          <img src='assets/Departments/dept-2.png' alt='Departments' className='w-[15vw] h-auto' />
-          <img src='assets/Departments/dept-3.png' alt='Departments' className='w-[15vw] h-auto' />        
+        <div className='sm:order-1 flex w-[30vw] sm:w-[60vw] items-center justify-center '>
+          <img src='assets/Departments/dept-1.png' alt='Departments' className='w-[10vw] sm:w-[30vw] h-auto' />
+          <img src='assets/Departments/dept-2.png' alt='Departments' className='w-[10vw] sm:w-[30vw] h-auto' />
+          <img src='assets/Departments/dept-3.png' alt='Departments' className='w-[10vw] sm:w-[30vw] h-auto' />        
         </div>
         <div className='flex flex-col pt-[5vh] z-0 text-white sm:mb-16 '>
           <h1 className='text-[#178376] text-5xl pb-4 font-bold'>What do we have?</h1>
@@ -43,7 +43,7 @@ const WhoWeAre = () => {
               <h1 className='text-[#178376] text-5xl pb-4 font-bold'>What do we do?</h1>
               <h3 className='sm:pl-8 text-white text-2xl'>Our mission is to innovate in humanoid robotics, creating many more bots for everyday community and home use.</h3>
         </div>
-        <img src='assets/RobotAssets/robot hand.png' alt='WhoWeAre' className='w-[20vw] sm:w-[50vw] mr-[10vw] object-cover' />
+        <img src='assets/RobotAssets/robot hand.png' alt='WhoWeAre' className='w-[20vw] sm:ml-[10vw] sm:mt-[5vh] sm:w-[50vw] mr-[10vw] object-cover' />
       </div>
 
       <hr className='ml-[8vw] w-[84vw] mt-[10vh]'/> 

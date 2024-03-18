@@ -5,13 +5,16 @@ const SynthetixBanner = () => {
   return (
     <div>
     <GalleryHeading text1="New" text2="Event" ptext="" />
+        <div className='z-0 pb-8 text-white flex items-center'>
+          <marquee behavior="scroll" direction="left" className='infinite p-2 bg-[#178376] text-xl font-semibold'><h1>NEW EVENT ALERT!!    NEW EVENT ALERT!!    NEW EVENT ALERT!!    NEW EVENT ALERT!!    NEW EVENT ALERT!!    NEW EVENT ALERT!!    NEW EVENT ALERT!!    NEW EVENT ALERT!!    NEW EVENT ALERT!!    NEW EVENT ALERT!!    NEW EVENT ALERT!!    NEW EVENT ALERT!!    NEW EVENT ALERT!!</h1></marquee>
+        </div>
       <div className='flex justify-center pb-8'>
-            <div className='texture-bg px-8 sm:h-[20vh] bg-[#178376] flex lg:flex-col rounded-xl'>
+            <div className='texture-bg px-8 bg-[#178376] flex lg:flex-col rounded-xl'>
                 <div className='flex  flex-col p-16 lg:p-8 lg:items-center'>
                     <h1 className='mxl:text-[4em] text-[3em] sm:text-[2em] font-bold text-white'>SYNTHETIX'24</h1>
                     <h4 className='text-black text-[em] mxl:text-[1.5em]  font-semibold'>THE FUTURE IS HERE!</h4>
                 </div>
-                <div className='flex pb-8 justify-center items-end pb-6'>
+                <div className='flex pb-8 justify-center items-end'>
                     <button className=' bg-black flex items-center rounded p-2'>
                         <p className=' text-white px-2'>Register</p>
                         <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">

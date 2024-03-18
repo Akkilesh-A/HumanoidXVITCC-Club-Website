@@ -15,9 +15,6 @@ const Header = () => {
               <a className='px-[1vw]'>OBs</a>
           </div>
       </div>
-      {/* <div className='z-0 pt-14 sm:pt-20 pb-0 t-0 text-white flex items-center'>
-          <marquee behavior="scroll" direction="left" className=' p-4 bg-gradient-to-b from-[#178376] to-stone-900 text-xl font-semibold'><h1>NEW EVENT ALERT!!    NEW EVENT ALERT!!    NEW EVENT ALERT!!</h1></marquee>
-      </div> */}
     </div>
   )
 }
