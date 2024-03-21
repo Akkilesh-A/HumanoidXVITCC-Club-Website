@@ -20,7 +20,7 @@ const PictureCard = () => {
     }
 
     return (
-      <div onClick={handleClick} className={activeMenu==text?"bg-[#178376] text-white rounded hover:duration-300 hover:ease-in-out hover:cursor-pointer hover:bg-stone-700  text-white px-4 py-2":"hover:duration-300 hover:ease-in-out hover:cursor-pointer hover:bg-[#6C6C6C] hover:text-white hover:rounded text-[white] px-4 py-2"}  key={text}>
+      <div onClick={handleClick} className={activeMenu==text?"bg-[#178376] text-white rounded hover:duration-300 hover:ease-in-out hover:cursor-pointer text-white px-4 py-2":"hover:duration-300 hover:ease-in-out hover:cursor-pointer hover:bg-[#178376] hover:rounded text-[white] px-4 py-2"}  key={text}>
         <p>{text}</p>
       </div>
     )
@@ -42,7 +42,7 @@ const PictureCard = () => {
     return (
       <div key={image.id} className={activeMenu==image.text || activeMenu=="All" ?"flex justify-center items-center text-center p-8 relative":"hidden"}>
           <img
-          className="md:w-[80vw] w-[20vw] hover:opacity-20 hover:scale-125 hover:duration-500 duration-500 rounded-2xl"
+          className="sm:w-[90vw] md:w-[80vw] w-[20vw] hover:opacity-20 hover:scale-125 hover:duration-500 duration-500 rounded-2xl"
             onMouseOver={mousedOver}
             onMouseOut={mousedOver}
             src={activeMenu==image.text || activeMenu=="All" ?image.imgURL:null}
@@ -62,7 +62,7 @@ const PictureCard = () => {
   
   //Rendering both the menu and the gallery
   return (
-    <div className="flex flex-col mr-20 ml-20 items-center">
+    <div className="flex flex-col mr-10 ml-10 items-center">
       <div className="flex justify-around text-center flex-wrap w-[80vw] mb-10">
         {MenuItems.map(createPictureMenu)}
       </div>

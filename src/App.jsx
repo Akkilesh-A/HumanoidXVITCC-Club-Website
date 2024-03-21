@@ -10,7 +10,7 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 const App = () => {
   return (
-    <div className='whole-website bg-gradient-to-b from-[#178365] to-stone-900'>
+    <div className='whole-website bg-gradient-to-b from-[#178365] to-stone-900 '>
       <Header />
       <LandingContent />
       <About /> 
