@@ -1,13 +1,8 @@
 import GalleryHeading from '../OBs/GalleryHeading';
 import { useState, useEffect } from 'react';
+import pictures from './pictures';
 
 const ImageCarousel = () => {
-    const pictures = [
-        { id: 1, src: 'assets/Events/Synthetix23/1.jpg', text: "Synthetix'23" },
-        { id: 2, src: 'assets/Events/Synthetix23/2.jpg', text: "Synthetix'23" },
-        { id: 3, src: 'assets/Events/Synthetix23/3.jpg', text: "Synthetix'23" },
-        { id: 4, src: 'assets/Events/NSS/1.jpg', text: 'NSS' }
-    ];
 
     const [current, setCurrent] = useState(0);
 
@@ -16,7 +11,7 @@ const ImageCarousel = () => {
             setCurrent(current => (current === pictures.length - 1 ? 0 : current + 1));
         }, 3000);
 
-        return () => clearInterval(interval); // Clear the interval on component unmount
+        return () => clearInterval(interval);
     }, [pictures.length]);
 
     return (
