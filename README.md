@@ -1,7 +1,6 @@
 # A React + Tailwind Club Website
 ### Just clone the repo, make some edits and there you go, you have a good looking responsive club website
 
-<br>
 <br> 
 
 # How to run
@@ -9,14 +8,13 @@
 ### Use <code>npm run dev</code> to run in [LocalHost:5173 Port](localhost:5173)
 
 <br>
-<br> 
+
 
 # Adding new Components
 ## 📁 src 
 ###  📂 App.jsx
 Add your component here after importing using <code>import exportedComponent from 'path' </code>
 
-<br>
 <br>
 
 # Easily Editable Components (Inside src folder)
@@ -79,6 +77,7 @@ Just add whatever text you want in each section and an image too!
     </tr>
 </table>
 
+<br>
 
 ## 📁 Section-4 - New Event Banner Section
 ###  📂 EventBanner.jsx
@@ -96,5 +95,4 @@ Navbar with buttons to scroll to specific components
 Music Player button and text to play music with specified file path
 ###  📂 sectionHeading.jsx 
 Use <code> SectionHeading text1="white-text" text2="custom-color-text" ptext="sub-text"
-</code>
-To create a heading for every section.
+</code> to create a heading for every section.
