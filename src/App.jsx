@@ -1,7 +1,7 @@
 import React from 'react'
 import Footer from './Components/Footer'
 import LandingContent from './Components/Section-1/LandingContent'
-import Header from './Components/Header'
+import NavBar from './Components/NavBar'
 import About from './Components/Section-2/About'
 import Obs from './Components/OBs/Obs'
 import ImageSlider from './Components/Section-3/ImageSlider'
@@ -11,7 +11,7 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 const App = () => {
   return (
     <div className='whole-website bg-gradient-to-b from-[#178365] to-stone-900 '>
-      <Header />
+      <NavBar />
       <LandingContent />
       <About /> 
       <ImageSlider />
