@@ -80,4 +80,7 @@ const pictures = [
     },
 ]
 
+const MenuItems=["All","Faculty","Club Advisories","Cabinet Leads",];
+
 export default pictures;
+export {MenuItems};

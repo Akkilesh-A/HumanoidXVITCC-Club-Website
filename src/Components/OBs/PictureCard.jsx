@@ -1,8 +1,5 @@
 import React,{ useState }  from 'react'
-import pictures from './Pictures.jsx'
-
-//The menu items
-const MenuItems=["All","Faculty","Club Advisories","Cabinet Leads"];
+import pictures,{MenuItems} from './Pictures.jsx'
 
 const PictureCard = () => {
   
