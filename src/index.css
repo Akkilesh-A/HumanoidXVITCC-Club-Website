@@ -23,3 +23,11 @@ body{
     background-color: #000000;
     background-image: url("https://www.transparenttextures.com/patterns/axiom-pattern.png");
 }
+
+.glass-morph{
+    background: rgba( 255, 255, 255, 0.3 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 10px );
+    border-radius: 10px;
+}
