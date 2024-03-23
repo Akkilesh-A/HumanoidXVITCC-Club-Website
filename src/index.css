@@ -24,3 +24,11 @@ body{
     background-image: url("https://www.transparenttextures.com/patterns/axiom-pattern.png");
 }
 
+#glow {
+    color: white;
+    -webkit-text-stroke: 0.5px #30dac6;
+    text-shadow: -1px 1px 2px #30dac6,
+				  1px 2px 6px #30dac6,
+				  1px -1px 0 #30dac6,
+				  -1px -1px 0 #30dac6;
+}

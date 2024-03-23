@@ -17,11 +17,11 @@ function NavBar() {
               <img src='\assets\logo.png' alt='logo' className=' h-[80%] ' />
               <h1 className='text-[1.5em] '>HumanoidX</h1>
           </div>
-          <div className=' flex items-center text-[1.25em] font-semibold justify-end w-[85vw]'>
+          <div className=' flex items-center text-[1.5em] font-semibold justify-end w-[85vw]'>
             
               <Link to="about" spy={true} smooth={true} offset={-150} duration={500} className='sm:invisible px-[1vw] cursor-pointer '><button className='mx-2 my-8'>About</button></Link>
               <Link to="achievements" spy={true} smooth={true} offset={-105} duration={500} className='sm:invisible px-[1vw] cursor-pointer'><button className='mx-2 my-8'>Achievements</button></Link>
-              <Link to="events" spy={true} smooth={true} offset={-100} duration={500} className='sm:invisible px-[1vw] cursor-pointer'><button className='mx-2 my-8'>Events</button></Link>
+              <Link to="events" spy={true} smooth={true} offset={-100} duration={500} className='sm:invisible px-[1vw] cursor-pointer'><button className='mx-2 my-8 animate-pulse' id="glow">Events</button></Link>
               <Link to="obs" spy={true} smooth={true} offset={-105} duration={500} className='sm:invisible px-[1vw] cursor-pointer'><button className='mx-2 my-8'>OBs</button></Link>
 
               
