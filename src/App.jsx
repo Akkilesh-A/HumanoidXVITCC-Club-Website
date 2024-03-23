@@ -7,12 +7,14 @@ import Obs from './Components/OBs/Obs'
 import SynthetixBanner from './Components/Section-4/SynthetixBanner'
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import ImageCarousel from './Components/Section-3/ImageCarousel'
+import MusicPlayer from './Components/MusicPlayer'
 
 const App = () => {
   return (
     <div className='whole-website bg-gradient-to-b from-[#178365] to-stone-900 '>
       <NavBar />
       <LandingContent />
+      <MusicPlayer />
       <About /> 
       <ImageCarousel />
       <SynthetixBanner /> 
