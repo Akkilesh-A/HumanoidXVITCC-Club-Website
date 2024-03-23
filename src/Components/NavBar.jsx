@@ -30,7 +30,7 @@ function NavBar() {
                 <div className='flex flex-col absolute right-10 top-[3em] NavBar-bg text-[1em] bg-[#178376] text-white p-4 rounded'>
                   <Link onClick={pizzaClick} to="about" spy={true} smooth={true} offset={-100} duration={500} className='cursor-pointer sm:visible text-black font-bold invisible px-[1vw] py-[1vh]'>About</Link>
                   <Link onClick={pizzaClick} to="achievements" spy={true} smooth={true} offset={-100} duration={500} className='cursor-pointer sm:visible invisible font-bold px-[1vw] py-[1vh]'>Achievements</Link>
-                  <Link onClick={pizzaClick} to="events" spy={true} smooth={true} offset={-100} duration={500} className='cursor-pointer sm:visible text-black font-bold invisible px-[1vw] py-[1vh]'>Events</Link>
+                  <Link onClick={pizzaClick} to="events" spy={true} smooth={true} offset={-100} duration={500} id="glow" className='cursor-pointer sm:visible text-black font-bold invisible px-[1vw] py-[1vh] animate-pulse' >Events</Link>
                   <Link onClick={pizzaClick} to="obs" spy={true} smooth={true} offset={-100} duration={500} className='cursor-pointer sm:visible invisible font-bold px-[1vw] py-[1vh]'>OBs</Link>
                 </div>
               </div>
