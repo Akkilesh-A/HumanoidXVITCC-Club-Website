@@ -1,10 +1,9 @@
 import React from 'react'
-import GalleryHeading from '../OBs/GalleryHeading.jsx'
-
+import SectionHeading from '../sectionHeading'
 const SynthetixBanner = () => {
   return (
     <div id="events">
-    <GalleryHeading text1="New" text2="Event" ptext="" />
+    <SectionHeading text1="New" text2="Event" ptext="" />
         <div className='z-0 pb-12 text-white flex items-center'>
           <marquee behavior="scroll" direction="left" className='p-2 bg-[#178376] text-xl font-semibold'><h1>NEW EVENT ALERT!!    NEW EVENT ALERT!!    NEW EVENT ALERT!!    NEW EVENT ALERT!!    NEW EVENT ALERT!!    NEW EVENT ALERT!!    NEW EVENT ALERT!!    NEW EVENT ALERT!!    NEW EVENT ALERT!!    NEW EVENT ALERT!!    NEW EVENT ALERT!!    NEW EVENT ALERT!!    NEW EVENT ALERT!!</h1></marquee>
         </div>

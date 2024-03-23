@@ -1,4 +1,4 @@
-import GalleryHeading from '../OBs/GalleryHeading';
+import SectionHeading from '../sectionHeading';
 import { useState, useEffect } from 'react';
 import pictures from './picturesImageCarousel';
 
@@ -16,7 +16,7 @@ const ImageCarousel = () => {
 
     return (
         <div id="achievements">
-            <GalleryHeading text1="Our" text2="Events & Achievements" ptext="Our Events over the years!" />
+            <SectionHeading text1="Our" text2="Events & Achievements" ptext="Our Events over the years!" />
             <div className='flex flex-col items-center text-white'>
                 <img
                     src={pictures[current].src}

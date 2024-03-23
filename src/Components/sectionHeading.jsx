@@ -1,6 +1,6 @@
 import React from 'react'
 
-const GalleryHeading = (props) => {
+const SectionHeading = (props) => {
   return (
     <section className="flex flex-col justify-center text-center  p-4">
       <h1 className="font-bold text-5xl text-[#178376]">
@@ -14,4 +14,4 @@ const GalleryHeading = (props) => {
   )
 }
 
-export default GalleryHeading
+export default SectionHeading
