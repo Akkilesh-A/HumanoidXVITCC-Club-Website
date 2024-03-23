@@ -1,6 +1,6 @@
 import GalleryHeading from '../OBs/GalleryHeading';
 import { useState, useEffect } from 'react';
-import pictures from './pictures';
+import pictures from './picturesImageCarousel';
 
 const ImageCarousel = () => {
 
