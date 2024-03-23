@@ -26,7 +26,7 @@ const ImageCarousel = () => {
                 <img
                     src={pictures[current].src}
                     alt={pictures[current].text}
-                    className='custom:h-[60vh] sm:duration-500 hover:scale-110 duration-500 hover:duration-500 rounded-lg'
+                    className='custom:h-[60vh] sm:w-[70vw] hover:scale-110 duration-500 hover:duration-500 rounded-lg'
                 />
                 <p className='p-4 text-s font-semibold'>{pictures[current].text}</p>
             </div>
