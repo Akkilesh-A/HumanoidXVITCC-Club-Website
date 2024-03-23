@@ -33,7 +33,7 @@ const ImageSlides = () => {
     }
 
     return (
-        <div>
+        <div id="achievements">
             <GalleryHeading text1="Our" text2="Events" ptext="Our Events over the years!" />
             <div className='mr-[15vw] sm:mr-[5vw] sm:ml-[5vw] ml-[15vw] mb-[10vh]'>
                 <div className='flex items-center justify-center'>

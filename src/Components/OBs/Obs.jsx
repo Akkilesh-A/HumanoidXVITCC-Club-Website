@@ -4,7 +4,7 @@ import GalleryHeading from './GalleryHeading'
 
 const Obs = () => {
   return (
-    <div>
+    <div id="obs">
         <GalleryHeading text1="Our" text2="OBs" ptext="Our Cabinet Members!" />
         <PictureCard />
     </div>

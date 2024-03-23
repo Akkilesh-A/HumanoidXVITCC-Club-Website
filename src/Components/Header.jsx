@@ -1,4 +1,5 @@
 import React,{useState} from 'react'
+import {Link} from 'react-scroll'
 
 
 function Header() {
@@ -17,19 +18,23 @@ function Header() {
               <h1 className='text-[1.5em] '>HumanoidX</h1>
           </div>
           <div className=' flex items-center text-[1.25em] font-semibold justify-end w-[85vw]'>
-              <a href='#' className='sm:invisible px-[1vw]'>About</a>
-              <a href='#' className='sm:invisible px-[1vw]'>Achievements</a>
-              <a className='sm:invisible px-[1vw]'>Projects</a>
-              <a className='sm:invisible px-[1vw]'>OBs</a>
+            
+              <Link to="about" spy={true} smooth={true} offset={-150} duration={500} className='sm:invisible px-[1vw]'>About</Link>
+              <Link to="achievements" spy={true} smooth={true} offset={-100} duration={500} className='sm:invisible px-[1vw]'>Achievements</Link>
+              <Link to="events" spy={true} smooth={true} offset={-100} duration={500} className='sm:invisible px-[1vw]'>Events</Link>
+              <Link to="obs" spy={true} smooth={true} offset={-100} duration={500} className='sm:invisible px-[1vw]'>OBs</Link>
+
+              
               <img src='\assets\pizza.png' alt='search' onClick={pizzaClick} className={pizzaClicked?'relative h-[3em] ml-[1vw] custom:hidden duration-300':'h-[3em] ml-[1vw] origin-center rotate-45 custom:hidden duration-300'} />
               <div onClick={pizzaClick} className={pizzaClicked?'duration-500':'duration-500 hidden'}>
                 <div className='flex flex-col absolute right-10 top-[5em] header-bg text-[1em] bg-[#178376] text-white p-4 rounded'>
-                <a href='#' className='sm:visible text-black font-bold invisible px-[1vw] py-[1vh]'>About</a>
-                <a href='#' className='sm:visible invisible font-bold px-[1vw] py-[1vh]'>Achievements</a>
-                <a className='sm:visible invisible text-black font-bold px-[1vw] py-[1vh]'>Projects</a>
-                <a className='sm:visible invisible font-bold px-[1vw] py-[1vh]'>OBs</a>
+                  <Link to="about" spy={true} smooth={true} offset={-100} duration={500} className='sm:visible text-black font-bold invisible px-[1vw] py-[1vh]'>About</Link>
+                  <Link to="achievements" spy={true} smooth={true} offset={-100} duration={500} className='sm:visible invisible font-bold px-[1vw] py-[1vh]'>Achievements</Link>
+                  <Link to="events" spy={true} smooth={true} offset={-100} duration={500} className='sm:visible text-black font-bold invisible px-[1vw] py-[1vh]'>Events</Link>
+                  <Link to="obs" spy={true} smooth={true} offset={-100} duration={500} className='sm:visible invisible font-bold px-[1vw] py-[1vh]'>OBs</Link>
                 </div>
               </div>
+
           </div>
       </div>
     </div>
