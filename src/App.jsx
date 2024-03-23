@@ -7,6 +7,7 @@ import Obs from './Components/OBs/Obs'
 import ImageSlider from './Components/Section-3/ImageSlider'
 import SynthetixBanner from './Components/Section-4/SynthetixBanner'
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import ImageCarousel from './Components/Section-3/ImageCarousel'
 
 const App = () => {
   return (
@@ -14,7 +15,7 @@ const App = () => {
       <NavBar />
       <LandingContent />
       <About /> 
-      <ImageSlider />
+      <ImageCarousel />
       <SynthetixBanner /> 
       <Obs />
       <Footer />

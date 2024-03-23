@@ -6,10 +6,10 @@ const SynthetixBanner = () => {
     <div id="events">
     <GalleryHeading text1="New" text2="Event" ptext="" />
         <div className='z-0 pb-12 text-white flex items-center'>
-          <marquee behavior="scroll" direction="left" className='infinite p-2 bg-[#178376] text-xl font-semibold'><h1>NEW EVENT ALERT!!    NEW EVENT ALERT!!    NEW EVENT ALERT!!    NEW EVENT ALERT!!    NEW EVENT ALERT!!    NEW EVENT ALERT!!    NEW EVENT ALERT!!    NEW EVENT ALERT!!    NEW EVENT ALERT!!    NEW EVENT ALERT!!    NEW EVENT ALERT!!    NEW EVENT ALERT!!    NEW EVENT ALERT!!</h1></marquee>
+          <marquee behavior="scroll" direction="left" className='p-2 bg-[#178376] text-xl font-semibold'><h1>NEW EVENT ALERT!!    NEW EVENT ALERT!!    NEW EVENT ALERT!!    NEW EVENT ALERT!!    NEW EVENT ALERT!!    NEW EVENT ALERT!!    NEW EVENT ALERT!!    NEW EVENT ALERT!!    NEW EVENT ALERT!!    NEW EVENT ALERT!!    NEW EVENT ALERT!!    NEW EVENT ALERT!!    NEW EVENT ALERT!!</h1></marquee>
         </div>
       <div className=' flex justify-center pb-8'>
-            <div className='hover:scale-125 duration-500 hover:duration-500 texture-bg px-8 bg-[#178376] flex lg:flex-col rounded-xl'>
+            <div className='hover:scale-125 duration-500 hover:duration-500 texture-bg px-8 bg-[#178376]/90 flex lg:flex-col rounded-xl'>
                 <div className='flex  flex-col p-16 lg:p-8 lg:items-center'>
                     <h1 className='mxl:text-[4em] text-[3em] sm:text-[2em] font-bold text-white'>SYNTHETIX'24</h1>
                     <h4 className='text-black text-[em] mxl:text-[1.5em]  font-semibold'>THE FUTURE IS HERE!</h4>
