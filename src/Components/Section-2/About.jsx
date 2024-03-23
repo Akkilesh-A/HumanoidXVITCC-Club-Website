@@ -19,7 +19,7 @@ const WhoWeAre = () => {
 
 
       <div className='flex sm:flex-col ml-[8vw] w-[84vw] h-[50vh] justify-around items-center'>
-        <div className='sm:order-1 flex w-[30vw] sm:w-[60vw] items-center justify-center '>
+        <div className='sm:order-1 flex w-[30vw] sm:w-[60vw] items-center justify-around '>
           <img src='assets/Departments/dept-1.png' alt='Departments' className='w-[6vw] sm:w-[10vw] h-auto' />
           <img src='assets/Departments/dept-2.png' alt='Departments' className='w-[10vw] sm:w-[10vw] h-auto' />
           <img src='assets/Departments/dept-3.png' alt='Departments' className='w-[10vw] sm:w-[10vw] h-auto' />        
