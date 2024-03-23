@@ -1,6 +1,9 @@
 import React from 'react'
 
 const WhoWeAre = () => {
+  function alertTwitter(){
+    alert("We don't have a Twitter 😂")
+  }
     
   return (
     <div id="about" className='text-white pb-[10vh] my-[2vh]'>
@@ -12,7 +15,7 @@ const WhoWeAre = () => {
               <h1 className='text-[#178376] text-5xl pb-4 font-bold'>Who are we?</h1>
               <h3 className='sm:pl-8 text-white text-2xl'>We are a group of like minded individuals promoting <span className=' font-semibold'>Humanoid Robotics</span> in VIT,Chennai</h3>
         </div>
-        <img src='assets/sheldon_logo.png' alt='WhoWeAre' className='w-[20vw] sm:w-[50vw] mr-[10vw] object-cover' />
+        <img src='assets/sheldon_logo.png' onClick={alertTwitter} alt='WhoWeAre' className='w-[20vw] sm:w-[50vw] mr-[10vw] object-cover' />
       </div>
 
       <hr className='ml-[32vw] w-[60vw] my-[10vh]'/> 
