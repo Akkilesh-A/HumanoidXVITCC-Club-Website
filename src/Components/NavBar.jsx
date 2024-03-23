@@ -19,7 +19,7 @@ function NavBar() {
           </div>
           <div className=' flex items-center text-[1.25em] font-semibold justify-end w-[85vw]'>
             
-              <Link to="about" spy={true} smooth={true} offset={-180} duration={500} className='sm:invisible px-[1vw] cursor-pointer'>About</Link>
+              <Link to="about" spy={true} smooth={true} offset={-170} duration={500} className='sm:invisible px-[1vw] cursor-pointer'>About</Link>
               <Link to="achievements" spy={true} smooth={true} offset={-120} duration={500} className='sm:invisible px-[1vw] cursor-pointer'>Achievements</Link>
               <Link to="events" spy={true} smooth={true} offset={-120} duration={500} className='sm:invisible px-[1vw] cursor-pointer'>Events</Link>
               <Link to="obs" spy={true} smooth={true} offset={-120} duration={500} className='sm:invisible px-[1vw] cursor-pointer'>OBs</Link>
