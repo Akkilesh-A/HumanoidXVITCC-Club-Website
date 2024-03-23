@@ -2,7 +2,7 @@ import React from 'react'
 
 const WhoWeAre = () => {
   function alertTwitter(){
-    alert("We don't have a Twitter 😂")
+    alert("We don't have a Twitter Accout yet 😂")
   }
     
   return (
