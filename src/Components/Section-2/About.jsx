@@ -15,7 +15,7 @@ const WhoWeAre = () => {
               <h1 className='text-[#178376] text-5xl pb-4 font-bold'>Who are we?</h1>
               <h3 className='sm:pl-8 text-white text-2xl'>We are a group of like minded individuals promoting <span className=' font-semibold'>Humanoid Robotics</span> in VIT,Chennai</h3>
         </div>
-        <img src='assets/sheldon_logo.png' onClick={alertTwitter} alt='WhoWeAre' className='w-[20vw] sm:w-[50vw] mr-[10vw] object-cover' />
+        <img src='assets/sheldon_logo.png' onClick={alertTwitter} alt='WhoWeAre' className='hover:scale-125 duration-500 hover:duration-500 w-[20vw] sm:w-[50vw] mr-[10vw] object-cover' />
       </div>
 
       <hr className='ml-[32vw] w-[60vw] my-[10vh]'/> 
@@ -31,10 +31,10 @@ const WhoWeAre = () => {
           <h1 className='text-[#178376] text-5xl pb-4 font-bold'>What do we have?</h1>
           <div className='pl-8'>
             <h3 className='text-white text-2xl  font-semibold'>We oversee 4 departments </h3> 
-            <h3 className='text-2xl'>Design & Automation</h3>
-            <h3 className='text-white text-2xl '>Electrical & Programming</h3>
-            <h3 className='text-2xl '>Management</h3>
-            <h3 className='text-white text-2xl '>Social Media & Content</h3>
+            <h3 className='hover:scale-125 duration-500 hover:duration-500 text-2xl'>Design & Automation</h3>
+            <h3 className='hover:scale-125 duration-500 hover:duration-500 text-white text-2xl '>Electrical & Programming</h3>
+            <h3 className='hover:scale-125 duration-500 hover:duration-500 text-2xl '>Management</h3>
+            <h3 className='hover:scale-125 duration-500 hover:duration-500 text-white text-2xl '>Social Media & Content</h3>
           </div>       
         </div>
       </div> 
@@ -46,7 +46,7 @@ const WhoWeAre = () => {
               <h1 className='text-[#178376] text-5xl pb-4 font-bold'>What do we do?</h1>
               <h3 className='sm:pl-8 text-white text-2xl'>Our mission is to innovate in humanoid robotics, creating many more bots for everyday community and home use.</h3>
         </div>
-        <img src='assets/RobotAssets/robot hand.png' alt='WhoWeAre' className='w-[20vw] sm:ml-[10vw] sm:mt-[5vh] sm:w-[50vw] mr-[10vw] object-cover' />
+        <img src='assets/RobotAssets/robot hand.png' alt='WhoWeAre' className='hover:scale-125 duration-500 hover:duration-500 w-[20vw] sm:ml-[10vw] sm:mt-[5vh] sm:w-[50vw] mr-[10vw] object-cover' />
       </div>
 
       <hr className='ml-[8vw] w-[84vw] mt-[10vh]'/> 
