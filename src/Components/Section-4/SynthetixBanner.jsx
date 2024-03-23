@@ -14,7 +14,7 @@ const SynthetixBanner = () => {
                     <h1 className='mxl:text-[4em] text-[3em] sm:text-[2em] font-bold text-white'>SYNTHETIX'24</h1>
                     <h4 className='text-black text-[em] mxl:text-[1.5em]  font-semibold'>THE FUTURE IS HERE!</h4>
                 </div>
-                <div className='flex pb-8 justify-center hover:text-[#178376] items-end'>
+                <div className='flex pb-8 justify-center hover:text-[#178376] font-semibold items-end'>
                     <button className='NavBar-bg hover:bg-white/60 text-white hover:text-[#178376] bg-black flex items-center rounded p-2'>
                         <p className='px-4 py-2'>Register</p>
                         <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">

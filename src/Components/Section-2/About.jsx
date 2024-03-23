@@ -23,9 +23,9 @@ const WhoWeAre = () => {
 
       <div className='flex sm:flex-col ml-[8vw] w-[84vw] h-[50vh] justify-around items-center'>
         <div className='sm:order-1 flex w-[30vw] sm:w-[60vw] items-center justify-around '>
-          <img src='assets/Departments/dept-1.png' alt='Departments' className='w-[6vw] sm:w-[10vw] h-auto' />
-          <img src='assets/Departments/dept-2.png' alt='Departments' className='w-[10vw] sm:w-[10vw] h-auto' />
-          <img src='assets/Departments/dept-3.png' alt='Departments' className='w-[10vw] sm:w-[10vw] h-auto' />        
+          <img src='assets/Departments/dept-1.png' alt='Departments' className='hover:scale-125 duration-500 hover:duration-500 w-[6vw] sm:w-[10vw] h-auto' />
+          <img src='assets/Departments/dept-2.png' alt='Departments' className='hover:scale-125 duration-500 hover:duration-500 w-[10vw] sm:w-[10vw] h-auto' />
+          <img src='assets/Departments/dept-3.png' alt='Departments' className='hover:scale-125 duration-500 hover:duration-500 w-[10vw] sm:w-[10vw] h-auto' />        
         </div>
         <div className='flex flex-col pt-[5vh] z-0 text-white sm:mb-16 '>
           <h1 className='text-[#178376] text-5xl pb-4 font-bold'>What do we have?</h1>
