@@ -20,9 +20,9 @@ function NavBar() {
           <div className=' flex items-center text-[1.25em] font-semibold justify-end w-[85vw]'>
             
               <Link to="about" spy={true} smooth={true} offset={-160} duration={500} className='sm:invisible px-[1vw] cursor-pointer'>About</Link>
-              <Link to="achievements" spy={true} smooth={true} offset={-120} duration={500} className='sm:invisible px-[1vw] cursor-pointer'>Achievements</Link>
-              <Link to="events" spy={true} smooth={true} offset={-120} duration={500} className='sm:invisible px-[1vw] cursor-pointer'>Events</Link>
-              <Link to="obs" spy={true} smooth={true} offset={-120} duration={500} className='sm:invisible px-[1vw] cursor-pointer'>OBs</Link>
+              <Link to="achievements" spy={true} smooth={true} offset={-110} duration={500} className='sm:invisible px-[1vw] cursor-pointer'>Achievements</Link>
+              <Link to="events" spy={true} smooth={true} offset={-110} duration={500} className='sm:invisible px-[1vw] cursor-pointer'>Events</Link>
+              <Link to="obs" spy={true} smooth={true} offset={-110} duration={500} className='sm:invisible px-[1vw] cursor-pointer'>OBs</Link>
 
               
               <img src='\assets\pizza.png' alt='search' onClick={pizzaClick} className={pizzaClicked?'relative h-[3em] ml-[1vw] custom:hidden duration-300':'h-[3em] ml-[1vw] origin-center rotate-45 custom:hidden duration-300'} />
