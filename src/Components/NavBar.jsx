@@ -11,7 +11,7 @@ function NavBar() {
   }
 
   return (
-    <div className=' z-10 flex flex-col fixed text-xs '>
+    <div className=' z-10 flex flex-col fixed text-xs opacity-75'>
       <div className='NavBar-bg fixed w-[100vw] sm:h-[8.5vh] h-[12vh] pr-8 pl-8 b-0 flex bg-black text-white font-bold'>
           <div className='flex items-center w-[15vw] font-'>
               <img src='\assets\logo.png' alt='logo' className=' h-[80%] ' />
@@ -19,7 +19,7 @@ function NavBar() {
           </div>
           <div className=' flex items-center text-[1.25em] font-semibold justify-end w-[85vw]'>
             
-              <Link to="about" spy={true} smooth={true} offset={-160} duration={500} className='sm:invisible px-[1vw] cursor-pointer'>About</Link>
+              <Link to="about" spy={true} smooth={true} offset={-160} duration={500} className='sm:invisible px-[1vw] cursor-pointer '><button className='px-4 py-8'>About</button></Link>
               <Link to="achievements" spy={true} smooth={true} offset={-110} duration={500} className='sm:invisible px-[1vw] cursor-pointer'>Achievements</Link>
               <Link to="events" spy={true} smooth={true} offset={-110} duration={500} className='sm:invisible px-[1vw] cursor-pointer'>Events</Link>
               <Link to="obs" spy={true} smooth={true} offset={-110} duration={500} className='sm:invisible px-[1vw] cursor-pointer'>OBs</Link>
