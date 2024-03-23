@@ -2,10 +2,10 @@ import React from 'react'
 import SectionHeading from '../sectionHeading'
 const SynthetixBanner = () => {
   return (
-    <div id="events">
+    <div id="events" className='mb-[10vh]'>
     <SectionHeading text1="New" text2="Event" ptext="" />
         <div className='z-0 pb-12 text-white flex items-center'>
-          <marquee behavior="scroll" direction="left" className='p-2 bg-[#178376] text-xl font-semibold'><h1>NEW EVENT ALERT!!    NEW EVENT ALERT!!    NEW EVENT ALERT!!    NEW EVENT ALERT!!    NEW EVENT ALERT!!    NEW EVENT ALERT!!    NEW EVENT ALERT!!    NEW EVENT ALERT!!    NEW EVENT ALERT!!    NEW EVENT ALERT!!    NEW EVENT ALERT!!    NEW EVENT ALERT!!    NEW EVENT ALERT!!</h1></marquee>
+          <marquee behavior="scroll" direction="left" className='p-2 bg-[#178376] text-xl font-semibold'><h1>NEW EVENT ALERT!<span> </span>  NEW EVENT ALERT! NEW EVENT ALERT!   NEW EVENT ALERT!   NEW EVENT ALERT!   NEW EVENT ALERT!   NEW EVENT ALERT!    NEW EVENT ALERT!    NEW EVENT ALERT!    NEW EVENT ALERT!  NEW EVENT ALERT!    NEW EVENT ALERT!    NEW EVENT ALERT!</h1></marquee>
         </div>
       <div className=' flex justify-center pb-8'>
             <div className='hover:scale-125 duration-500 hover:duration-500 texture-bg px-8 bg-[#178376]/90 flex lg:flex-col rounded-xl'>
@@ -22,7 +22,9 @@ const SynthetixBanner = () => {
                     </button>
                 </div>
             </div>
-        </div>   
+        </div>  
+        <hr className='ml-[8vw] w-[84vw] mt-[10vh]'/> 
+ 
     </div>
     
   )

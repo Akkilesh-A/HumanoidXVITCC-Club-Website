@@ -40,9 +40,11 @@ const WhoWeAre = () => {
   const [isSocialMedia,setSocialMedia]=useState(false);
     
   return (
-    <div id="about" className='text-white pb-[10vh] my-[2vh]'>
+    <div id="about" className='text-white mb-[10vh] my-[2vh]'>
 
       {/* <hr className='ml-[8vw] w-[60vw] mb-[5vh]'/> */}
+      <hr className='ml-[8vw] w-[84vw] my-[5vh]'/> 
+
 
       <div className='flex sm:flex-col items-center justify-center '>
         <div className='px-[8vw] flex flex-col  z-0 justify-center'>
@@ -51,6 +53,8 @@ const WhoWeAre = () => {
         </div>
         <img src='assets/sheldon_logo.png' onClick={alertTwitter} alt='WhoWeAre' className='hover:scale-125 duration-500 hover:duration-500 w-[20vw] sm:w-[50vw] mr-[10vw] object-cover' />
       </div>
+      <hr className='ml-[8vw] w-[84vw] my-[5vh]'/> 
+
     
       {/* <hr className='ml-[32vw] w-[60vw] my-[10vh]'/>  */}
 
@@ -72,6 +76,7 @@ const WhoWeAre = () => {
           </div>       
         </div>
       </div> 
+      <hr className='ml-[8vw] w-[84vw] my-[5vh]'/> 
       
       {/* <hr className='ml-[8vw] w-[60vw] my-[10vh] sm:mt-[20vh]'/> */}
 
@@ -83,7 +88,7 @@ const WhoWeAre = () => {
         <img src='assets/RobotAssets/robot hand.png' alt='WhoWeAre' className='hover:scale-125 duration-500 hover:duration-500 w-[20vw] sm:ml-[10vw] sm:mt-[5vh] sm:w-[50vw] mr-[10vw] object-cover' />
       </div>
 
-      {/* <hr className='ml-[8vw] w-[84vw] mt-[10vh]'/>  */}
+      <hr className='ml-[8vw] w-[84vw] my-[5vh]'/> 
 
     </div>
   )
