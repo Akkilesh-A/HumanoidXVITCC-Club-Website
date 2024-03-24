@@ -1,4 +1,4 @@
-import SectionHeading from '../SectionHeading';
+import SectionHeading from '../sectionHeading';
 import { useState, useEffect } from 'react';
 import pictures from './picturesImageCarousel';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa'; 

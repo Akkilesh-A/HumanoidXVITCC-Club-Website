@@ -1,6 +1,6 @@
 import React from 'react'
 import PictureCard from './PictureCard'
-import SectionHeading from '../SectionHeading'
+import SectionHeading from '../sectionHeading'
 
 const Obs = () => {
   return (
