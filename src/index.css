@@ -31,3 +31,9 @@ body{
 				  1px -1px 0 #30dac6,
 				  -1px -1px 0 #30dac6;
 }
+
+#myVideo {
+    position: absolute;
+    visibility: visible;
+    width: 90vw;
+}
