@@ -89,7 +89,7 @@ const WhoWeAre = () => {
               <h1 className='text-[#178376] text-5xl pb-4 font-bold'>What do we do?</h1>
               <h3 className='sm:pl-8 text-white text-2xl'>Our mission is to innovate in humanoid robotics, creating many more bots for everyday community and home use.</h3>
         </div>
-        <img src='assets/RobotAssets/robot hand.png' alt='WhoWeAre' className='hover:scale-125 duration-500 hover:duration-500 w-[20vw] sm:ml-[10vw] sm:mt-[5vh] sm:w-[50vw] mr-[10vw] object-cover' />
+        <img src='assets/RobotAssets/robot hand.png' alt='WhoWeAre' className='w-[20vw] sm:ml-[10vw] sm:mt-[5vh] sm:w-[50vw] mr-[10vw] object-cover' />
       </div>
 
       <hr className='ml-[8vw] w-[84vw] my-[5vh]'/> 
