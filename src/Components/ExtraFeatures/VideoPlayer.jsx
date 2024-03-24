@@ -10,7 +10,7 @@ const VideoPlayer = () => {
                 <source src="assets\Events\TechnoVIT\SelfBalance.mp4" type="video/mp4" />
             </video> 
         </div>
-        
+        <hr className='ml-[8vw] w-[84vw] mt-[10vh]'/> 
     </div>
   )
 }
