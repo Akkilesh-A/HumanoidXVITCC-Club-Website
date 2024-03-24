@@ -24,7 +24,6 @@ const SynthetixBanner = () => {
             </div>
         </div>  
         <hr className='ml-[8vw] w-[84vw] mt-[10vh]'/> 
- 
     </div>
     
   )
