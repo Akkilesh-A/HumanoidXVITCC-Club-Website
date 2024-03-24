@@ -51,7 +51,11 @@ const WhoWeAre = () => {
               <h1 className='text-[#178376] text-5xl pb-4 font-bold'>Who are we?</h1>
               <h3 className='sm:pl-8 text-white text-2xl'>We are a group of like minded individuals promoting <span className=' font-semibold'>Humanoid Robotics</span> in VIT,Chennai</h3>
         </div>
-        <img src='assets/Logos/sheldon_logo.png' onClick={alertTwitter} alt='WhoWeAre' className='hover:scale-125 duration-500 hover:duration-500 w-[20vw] sm:w-[50vw] mr-[10vw] object-cover' />
+        <img src="assets/Logos/sheldon_logo.png" alt='WhoWeAre' className='duration-500 w-[20vw] sm:w-[50vw] mr-[10vw] object-cover' usemap="#image-map" />
+        <map name="image-map" onClick={alertTwitter}>
+            <area alt="X logo" href="#" onClick={alertTwitter}  coords="100,100,10" shape="circle" />
+        </map>
+        {/* <img src='assets/Logos/sheldon_logo.png' onClick={alertTwitter} alt='WhoWeAre' className='hover:scale-125 duration-500 hover:duration-500 w-[20vw] sm:w-[50vw] mr-[10vw] object-cover' /> */}
       </div>
       <hr className='ml-[8vw] w-[84vw] my-[5vh]'/> 
 
