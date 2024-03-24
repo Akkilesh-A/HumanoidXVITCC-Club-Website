@@ -7,7 +7,8 @@ import Obs from './Components/Section-5/Obs'
 import SynthetixBanner from './Components/Section-4/SynthetixBanner'
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import ImageCarousel from './Components/Section-3/ImageCarousel'
-import MusicPlayer from './Components/MusicPlayer'
+import MusicPlayer from './Components/ExtraFeatures/MusicPlayer'
+import VideoPlayer from './Components/ExtraFeatures/VideoPlayer'
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
       <LandingContent />
       <MusicPlayer />
       <About /> 
+      <VideoPlayer />
       <ImageCarousel />
       <SynthetixBanner /> 
       <Obs />
