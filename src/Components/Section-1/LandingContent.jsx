@@ -2,7 +2,7 @@ import React,{useState} from 'react'
 
 const LandingContent = () => {
   return (
-    <div className='pt-[20vh] sm:pb-0 pb-[70vh] sm:flex-col sm:pt-[14vh] text-white badges'>
+    <div className='pt-[10vh] sm:pb-0 pb-[70vh] sm:flex-col sm:pt-[14vh] text-white badges'>
       <div className='sm:hidden myvideo flex absolute justify-center items-center w-[100%] sm:w-[80%]  flex-wrap'>
           {/* <iframe className='mx-4 my-4' width="100%" height="500"
             src="https://www.youtube.com/embed/RYRiMNGDgL4?loop=1&mute=1&autoplay=1&controls=0&playlist=RYRiMNGDgL4">
