@@ -2,9 +2,9 @@ import React from 'react'
 import SectionHeading from '../ExtraFeatures/SectionHeading'
 
 const projects=[
-    {imgURL: "assets/Events/Flipkart/3.jpeg", title: 'Drone', description: 'Drone that helped us win Flipkart Grid Competition'},
-    {imgURL: "assets/Events/TechnoVIT/1.jpg", title: 'Project 2', description: 'This is a description of project 2'},
-    {imgURL: "assets/Events/TechnoVIT/2.jpg", title: 'Project 1', description: 'This is a description of project 1'},
+    {imgURL: "assets/Events/Flipkart/3.jpeg", title: 'Drone', description: 'Drone that helped us reach finals of Flipkart GRID 4.0 Robotics Competition'},
+    {imgURL: "assets/Events/TechnoVIT/1.jpg", title: 'Project 1', description: 'This is a description of project 1'},
+    {imgURL: "assets/Events/TechnoVIT/2.jpg", title: 'Project 2', description: 'This is a description of project 2'},
 ]
 
 function createProjectCard(project){
