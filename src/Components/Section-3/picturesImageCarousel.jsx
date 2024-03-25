@@ -28,6 +28,7 @@ const pictures = [
     { id: 27, src: 'assets/Events/Flipkart/2.jpeg', text: "Flipkart Grid" },
     { id: 28, src: 'assets/Events/Flipkart/3.jpeg', text: "Flipkart Grid" },
     { id: 29, src: 'assets/Events/Flipkart/4.jpeg', text: "Flipkart Grid" },
+    { id: 30, src: 'assets/Events/Flipkart/5.jpeg', text: "Flipkart Grid" },
 ];
 
 export default pictures;
