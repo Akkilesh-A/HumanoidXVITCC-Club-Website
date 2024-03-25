@@ -28,7 +28,6 @@ const ProjectCards = () => {
                 {projects.map(createProjectCard)}
             </div>
         </div> 
-        <hr className='ml-[8vw] w-[84vw] my-[10vh]'/> 
     </div>
     
   )

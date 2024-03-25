@@ -19,7 +19,7 @@ const App = () => {
       <MusicPlayer />
       <About /> 
       <ProjectCards /> 
-      {/* <VideoPlayer /> */}
+      <VideoPlayer />
       <ImageCarousel />
       <SynthetixBanner /> 
       <Obs />
