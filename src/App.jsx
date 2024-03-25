@@ -9,6 +9,7 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import ImageCarousel from './Components/Section-3/ImageCarousel'
 import MusicPlayer from './Components/ExtraFeatures/MusicPlayer'
 import VideoPlayer from './Components/ExtraFeatures/VideoPlayer'
+import ProjectCards from './Components/ProjectCard/ProjectCards'
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
       <LandingContent />
       <MusicPlayer />
       <About /> 
+      <ProjectCards /> 
       <VideoPlayer />
       <ImageCarousel />
       <SynthetixBanner /> 
