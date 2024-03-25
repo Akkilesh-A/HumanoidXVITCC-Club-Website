@@ -21,7 +21,7 @@ function createProjectCard(project){
 
 const ProjectCards = () => {
   return (
-    <div>
+    <div id="projects">
         <SectionHeading text1="Our" text2="Projects" ptext="" />
         <div className='ml-[8vw] mr-[8vw] '>
             <div className='sm:inline flex flex-wrap justify-center'>
