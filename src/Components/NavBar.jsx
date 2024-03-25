@@ -10,12 +10,16 @@ function NavBar() {
     setPizzaClicked(!pizzaClicked);
   }
 
+  function stayOnThisPage(){
+    window.location.href = "https://humanoidxvitcc.netlify.app/";
+  }
+
   return (
     <div className=' z-10 flex flex-col fixed text-xs opacity-[85]'>
       <div className='NavBar-bg fixed w-[100vw] sm:h-[8.5vh] h-[12vh] pr-8 pl-8 b-0 flex bg-black text-white font-bold'>
           <div className='flex items-center w-[15vw] font-'>
-              <img src='\assets\Logos\logo.png' alt='logo' className=' h-[80%] ' />
-              <h1 className='text-[1.5em] '>HumanoidX</h1>
+              <img  onClick={stayOnThisPage} src='\assets\Logos\logo.png' alt='logo' className=' h-[80%] ' />
+              <a href="https://humanoidxvitcc.netlify.app/" className='text-[1.5em] '>HumanoidX</a>
           </div>
           <div className=' flex items-center text-[1.5em] font-semibold justify-end w-[85vw]'>
             
