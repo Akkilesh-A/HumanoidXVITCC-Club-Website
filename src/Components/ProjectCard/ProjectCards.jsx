@@ -13,7 +13,7 @@ function createProjectCard(project){
             <img className='w-[18vw] sm:w-[100%] rounded-t-xl' src={project.imgURL} alt={project.title}/>
             <div className='flex flex-col items-center sm:w-[100%] w-[18vw] rounded-b-xl bg-[#178376] p-4'>
                 <h1 className='text-[1.5rem] font-bold'>{project.title}</h1>
-                <p className='text-center pt-4'>{project.description}</p> 
+                <p className='text-center text-black font-semibold pt-4'>{project.description}</p> 
             </div>  
         </div>
     )
@@ -28,6 +28,7 @@ const ProjectCards = () => {
                 {projects.map(createProjectCard)}
             </div>
         </div> 
+        <hr className='ml-[8vw] w-[84vw] my-[10vh]'/> 
     </div>
     
   )
