@@ -1,5 +1,5 @@
 import React from 'react'
-import SectionHeading from '../SectionHeading'
+import SectionHeading from '../ExtraFeatures/SectionHeading'
 const SynthetixBanner = () => {
   return (
     <div id="events" className='mb-[10vh]'>

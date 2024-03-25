@@ -1,5 +1,5 @@
 import React from 'react'
-import SectionHeading from '../SectionHeading'
+import SectionHeading from '../ExtraFeatures/SectionHeading'
 
 const projects=[
     {imgURL: "assets/Events/Flipkart/3.jpeg", title: 'Drone', description: 'Drone that helped us win Flipkart Grid Competition'},
