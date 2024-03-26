@@ -1,16 +1,14 @@
-import React,{useState,useEffect} from 'react'
+import React,{useState,useEffect,lazy,Suspense} from 'react'
+import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader";
 import Footer from './Components/Footer'
 import LandingContent from './Components/Section-1/LandingContent'
 import NavBar from './Components/NavBar'
-import About from './Components/Section-2/About'
-import Obs from './Components/Section-5/Obs'
-import SynthetixBanner from './Components/Section-4/SynthetixBanner'
-import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import ImageCarousel from './Components/Section-3/ImageCarousel'
-import MusicPlayer from './Components/ExtraFeatures/MusicPlayer'
-import VideoPlayer from './Components/ExtraFeatures/VideoPlayer'
-import ProjectCards from './Components/ProjectCard/ProjectCards'
-import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader";
+const About = lazy(() => import('./Components/Section-2/About'))
+const Obs = lazy(() => import('./Components/Section-5/Obs'))
+const SynthetixBanner = lazy(() => import('./Components/Section-4/SynthetixBanner'))
+const ImageCarousel = lazy(() => import('./Components/Section-3/ImageCarousel'))
+const VideoPlayer = lazy(() => import('./Components/ExtraFeatures/VideoPlayer'))
+const ProjectCards = lazy(() => import('./Components/ProjectCard/ProjectCards'))
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -22,7 +20,7 @@ const App = () => {
   })
   return (
     <div className='whole-website bg-gradient-to-b from-[#178365] to-stone-900 '>
-      {loading ? <div className='flex text-white flex-col w-[100%] items-center justify-center h-[90vh]'>
+      {loading ? <div className='flex text-white flex-col w-[100%] items-center justify-center h-[100vh] sm:h-[80vh]'>
             <ClimbingBoxLoader
             color={'#178376'}
             loading={loading}
@@ -34,13 +32,23 @@ const App = () => {
       :<div>
         <NavBar />
         <LandingContent />
-        <About /> 
-        <ProjectCards /> 
-        <VideoPlayer />
-        <ImageCarousel />
-        <SynthetixBanner /> 
-        <Obs />
-        <Footer />
+        <Suspense fallback={<div className='flex text-white flex-col w-[100%] items-center justify-center'>
+            <ClimbingBoxLoader
+            color={'#178376'}
+            loading={loading}
+            size={30}
+            aria-label="Loading Spinner"
+            data-testid="loader"
+          />
+      </div> }> 
+          <About /> 
+          <ProjectCards /> 
+          <VideoPlayer />
+          <ImageCarousel />
+          <SynthetixBanner /> 
+          <Obs />
+          <Footer />
+        </Suspense>        
         </div>}
     </div>
   )
