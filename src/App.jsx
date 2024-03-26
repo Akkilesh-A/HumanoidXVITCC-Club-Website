@@ -34,7 +34,6 @@ const App = () => {
       :<div>
         <NavBar />
         <LandingContent />
-        <MusicPlayer />
         <About /> 
         <ProjectCards /> 
         <VideoPlayer />

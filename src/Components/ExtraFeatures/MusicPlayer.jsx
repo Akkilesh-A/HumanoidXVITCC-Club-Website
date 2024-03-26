@@ -26,10 +26,10 @@ const MusicPlayer = ({ url }) => {
   const [playing, toggle] = useAudio(url);
 
   return (
-    <div className="text-center xl:mt-[55vh] mt-[50vh] sm:mt-[20vh]">
-      <h1 className="text-white mb-[3vh] text-[2em] font-semibold ">Our Club Anthem</h1>
+    <div className="text-center z-0 mt-[10vh] sm:mt-[5vh]">
+      <h1 className="text-white mb-[3vh] text-[3em] sm:text-[2em] font-bold ">Our Club Anthem</h1>
       <button className="text-white p-4 bg-[#178376] rounded-xl font-semibold" onClick={toggle}>{playing ? "Pause ⏸️" : "Play  ▶️"}</button>
-      <h1 className="text-white mt-[3vh] text-[1em] font-semibold ">Scroll Down, Explore and get Enlightened!</h1>
+      <h1 className="text-white mt-[3vh] text-[2em] sm:text-[1em] font-semibold ">Scroll Down, Explore and get Enlightened!</h1>
     </div>
   );
 };
