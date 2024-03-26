@@ -73,14 +73,16 @@ const WhoWeAre = () => {
           <h1 className='text-[#178376] text-5xl pb-4 font-bold'>What do we have?</h1>
           <div className='pl-8'>
             <h3 className='text-white text-2xl font-semibold'>We oversee 4 departments </h3> 
-            <h3 onMouseOver={setDesignTrue} onMouseOut={setDesignFalse} className={isDesign?'scale-125 duration-500':'hover:scale-125 duration-500 hover:duration-500 text-2xl sm:text-[1em]'}>Design & Automation</h3>
-            <h3 onMouseOver={setElectricalTrue} onMouseOut={setElectricalFalse} className={isElectrical?'scale-125 duration-500':'hover:scale-125 duration-500 hover:duration-500 text-2xl sm:text-[1em]'}>Electrical & Programming</h3>
-            <h3 onMouseOver={setManagementTrue} onMouseOut={setManagementFalse} className={isManagement?'scale-125 duration-500':'hover:scale-125 duration-500 hover:duration-500 text-2xl sm:text-[1em]'}>Management</h3>
-            <h3 onMouseOver={setSocialMediaTrue} onMouseOut={setMediaFalse} className={isSocialMedia?'scale-125 duration-500':'hover:scale-125 duration-500 hover:duration-500 text-2xl sm:text-[1em]'}>Social Media & Content</h3>
+            <div className='pl-4'>
+              <h3 onMouseOver={setDesignTrue} onMouseOut={setDesignFalse} className={isDesign?'scale-125 duration-500':'hover:scale-125 duration-500 hover:duration-500 text-2xl sm:text-[1em]'}>Design & Automation</h3>
+              <h3 onMouseOver={setElectricalTrue} onMouseOut={setElectricalFalse} className={isElectrical?'scale-125 duration-500':'hover:scale-125 duration-500 hover:duration-500 text-2xl sm:text-[1em]'}>Electrical & Programming</h3>
+              <h3 onMouseOver={setManagementTrue} onMouseOut={setManagementFalse} className={isManagement?'scale-125 duration-500':'hover:scale-125 duration-500 hover:duration-500 text-2xl sm:text-[1em]'}>Management</h3>
+              <h3 onMouseOver={setSocialMediaTrue} onMouseOut={setMediaFalse} className={isSocialMedia?'scale-125 duration-500':'hover:scale-125 duration-500 hover:duration-500 text-2xl sm:text-[1em]'}>Social Media & Content</h3>
+            </div>
           </div>       
         </div>
       </div> 
-      <hr className='ml-[8vw] w-[84vw] my-[5vh]'/> 
+      <hr className='ml-[8vw] w-[84vw] my-[10vh]'/> 
       
       {/* <hr className='ml-[8vw] w-[60vw] my-[10vh] sm:mt-[20vh]'/> */}
 
