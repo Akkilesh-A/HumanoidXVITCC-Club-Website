@@ -16,8 +16,10 @@ const App = () => {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    setLoading(false);
-     }, []);
+    const removeLoader = () => setLoading(false);
+    window.addEventListener("load", removeLoader);
+    return window.removeEventListener("load", removeLoader);
+  }, []);
   return (
     <div className='whole-website bg-gradient-to-b from-[#178365] to-stone-900 '>
       {loading ? <div className='flex text-white flex-col w-[100%] items-center justify-center h-[90vh]'>
