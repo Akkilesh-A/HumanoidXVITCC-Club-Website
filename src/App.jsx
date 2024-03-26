@@ -13,31 +13,26 @@ import ProjectCards from './Components/ProjectCard/ProjectCards'
 import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader";
 
 const App = () => {
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    const removeLoader = () => setLoading(false);
-    window.addEventListener("load", removeLoader);
-    return window.removeEventListener("load", removeLoader);
-  }, []);
-
-  const Loading = () => {
-    return (
-      <div className='flex text-white flex-col w-[100%] items-center justify-center h-[90vh]'>
-                    <ClimbingBoxLoader
-                    color={'#178376'}
-                    loading={loading}
-                    size={30}
-                    aria-label="Loading Spinner"
-                    data-testid="loader"
-                    />
-      </div> 
-    );
-  };
-
+    setLoading(true)
+    setTimeout(() => {
+      setLoading(false)
+    }, 2500)
+  })
   return (
     <div className='whole-website bg-gradient-to-b from-[#178365] to-stone-900 '>
-      {loading && <div>
+      {loading ? <div className='flex text-white flex-col w-[100%] items-center justify-center h-[90vh]'>
+            <ClimbingBoxLoader
+            color={'#178376'}
+            loading={loading}
+            size={30}
+            aria-label="Loading Spinner"
+            data-testid="loader"
+          />
+      </div> 
+      :<div>
         <NavBar />
         <LandingContent />
         <MusicPlayer />
