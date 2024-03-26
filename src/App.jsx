@@ -13,16 +13,17 @@ import ProjectCards from './Components/ProjectCard/ProjectCards'
 import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader";
 
 const App = () => {
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const removeLoader = () => setLoading(false);
     window.addEventListener("load", removeLoader);
     return window.removeEventListener("load", removeLoader);
   }, []);
-  return (
-    <div className='whole-website bg-gradient-to-b from-[#178365] to-stone-900 '>
-      {loading ? <div className='flex text-white flex-col w-[100%] items-center justify-center h-[90vh]'>
+
+  const Loading = () => {
+    return (
+      <div className='flex text-white flex-col w-[100%] items-center justify-center h-[90vh]'>
                     <ClimbingBoxLoader
                     color={'#178376'}
                     loading={loading}
@@ -30,8 +31,13 @@ const App = () => {
                     aria-label="Loading Spinner"
                     data-testid="loader"
                     />
-                </div> 
-      :<div>
+      </div> 
+    );
+  };
+
+  return (
+    <div className='whole-website bg-gradient-to-b from-[#178365] to-stone-900 '>
+      {loading && <div>
         <NavBar />
         <LandingContent />
         <MusicPlayer />
