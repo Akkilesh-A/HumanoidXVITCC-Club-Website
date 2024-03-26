@@ -38,7 +38,7 @@ const PictureCard = () => {
 
     return (
       <div key={image.id} className={activeMenu==image.text || activeMenu=="All" ?"flex justify-center items-center text-center p-8 relative":"hidden"}>
-          <img
+          <img loading="lazy"
           className="sm:w-[90vw] md:w-[80vw] w-[20vw] hover:opacity-70 hover:scale-125 hover:duration-500 duration-500 rounded-2xl"
             onMouseOver={mousedOver}
             onMouseOut={mousedOver}

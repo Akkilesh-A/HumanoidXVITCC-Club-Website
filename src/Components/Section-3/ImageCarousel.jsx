@@ -41,7 +41,7 @@ const ImageCarousel = () => {
             <div className='flex justify-center items-center'>
                 <FaArrowLeft className="text-white cursor-pointer mb-16 mr-8 text-3xl" onClick={goToPrevious} />
                 <div className='flex flex-col items-center text-white relative' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-                    <img
+                    <img loading="lazy"
                         src={pictures[current].src}
                         alt={pictures[current].text}
                         className='custom:h-[60vh] sm:w-[70vw] hover:scale-110 duration-500 mb-[2vh] hover:duration-500 rounded-lg'

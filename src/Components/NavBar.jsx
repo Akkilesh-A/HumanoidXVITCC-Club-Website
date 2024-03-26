@@ -18,7 +18,7 @@ function NavBar() {
     <div className=' z-10 flex flex-col fixed text-xs opacity-[85]'>
       <div className='NavBar-bg fixed w-[100vw] sm:h-[8.5vh] h-[12vh] pr-8 pl-8 b-0 flex bg-black text-white font-bold'>
           <div className='flex items-center w-[15vw] font-'>
-              <img  onClick={stayOnThisPage} src='\assets\Logos\logo.png' alt='logo' className='cursor-pointer h-[80%] ' />
+              <img loading="lazy"  onClick={stayOnThisPage} src='\assets\Logos\logo.png' alt='logo' className='cursor-pointer h-[80%] ' />
               <a href="https://humanoidxvitcc.netlify.app/" className='text-[1.5em] '>HumanoidX</a>
           </div>
           <div className=' flex items-center text-[1.5em] font-semibold justify-end w-[85vw]'>
@@ -30,7 +30,7 @@ function NavBar() {
               <Link to="obs" spy={true} smooth={true} offset={-105} duration={500} className='sm:invisible px-[1vw] cursor-pointer'><button className='mx-2 my-8'>OBs</button></Link>
 
               
-              <img src='\assets\pizza.png' alt='search' onClick={pizzaClick} className={pizzaClicked?'relative h-[3em] mr-12 custom:hidden duration-300':'h-[3em] sm:mr-12 origin-center rotate-45 custom:hidden duration-300'} />
+              <img loading="lazy" src='\assets\pizza.png' alt='search' onClick={pizzaClick} className={pizzaClicked?'relative h-[3em] mr-12 custom:hidden duration-300':'h-[3em] sm:mr-12 origin-center rotate-45 custom:hidden duration-300'} />
               <div onClick={pizzaClick} className={pizzaClicked?'duration-500 ':'duration-500 hidden '}>
                 <div className='z-[100] flex flex-col absolute right-10 top-[4em] NavBar-bg text-[1em] bg-[#178376] text-white p-4 rounded'>
                   <Link onClick={pizzaClick} to="about" spy={true} smooth={true} offset={-100} duration={1000} className='cursor-pointer sm:visible text-black font-bold invisible px-[1vw] py-[1vh]'>About</Link>

@@ -25,7 +25,7 @@ const ImageSlides = () => {
         if(picture.id==current+1){
             return (
                 <div className='flex flex-col items-center text-white'>
-                    <img src={picture.src} alt={picture.id} className='custom:h-[70vh] duration-500 hover:scale-110 rounded-lg'/>
+                    <img loading="lazy" src={picture.src} alt={picture.id} className='custom:h-[70vh] duration-500 hover:scale-110 rounded-lg'/>
                     <p className='p-4 text-s font-semibold'>{picture.text}</p>
                 </div>
             )
