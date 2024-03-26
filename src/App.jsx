@@ -42,13 +42,13 @@ const App = () => {
           />
       </div> }> 
           <About /> 
+        </Suspense> 
           <ProjectCards /> 
           <VideoPlayer />
           <ImageCarousel />
           <SynthetixBanner /> 
           <Obs />
-          <Footer />
-        </Suspense>        
+          <Footer />       
         </div>}
     </div>
   )
