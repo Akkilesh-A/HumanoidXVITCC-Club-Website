@@ -62,7 +62,7 @@ const WhoWeAre = () => {
     
       {/* <hr className='ml-[32vw] w-[60vw] my-[10vh]'/>  */}
 
-      <div className='flex sm:flex-col ml-[8vw] w-[84vw] h-[50vh] sm:h-[auto] justify-around items-center'>
+      <div className='flex sm:flex-col ml-[8vw] w-[84vw] sm:h-[auto] justify-around items-center'>
         <div className='sm:order-1 flex w-[35vw] sm:w-[60vw] items-center justify-between '>
           <img onMouseOver={setDesignTrue} onMouseOut={setDesignFalse} src='assets/Departments/design&automation.png' alt='Departments' className={isDesign?'duration-500 scale-[2] w-[6vw] sm:w-[10vw] h-auto':'hover:scale-[2]  scale-[1.5] duration-500 hover:duration-500  w-[6vw] sm:w-[10vw] h-auto' }/>
           <img onMouseOver={setElectricalTrue} onMouseOut={setElectricalFalse} src='assets/Departments/electrical&programming.png' alt='Departments' className={isElectrical?'duration-500 scale-[2] w-[6vw] sm:w-[10vw] h-auto':'hover:scale-[2]  scale-[1.5] duration-500 hover:duration-500  w-[6vw] sm:w-[10vw] h-auto' } />

@@ -3,7 +3,7 @@ import MusicPlayer from '../ExtraFeatures/MusicPlayer'
 
 const LandingContent = () => {
   return (
-    <div className='pt-[10vh] h-[100vh] sm:h-[auto] text-white badges'>
+    <div className='pt-[10vh] sm:h-[auto] text-white badges'>
       <div className='sm:hidden flex blur absolute justify-center items-center w-[100%]'>
           <video autoPlay muted loop>
             <source src="assets/reel.mp4" type="video/mp4" />
