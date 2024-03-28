@@ -1,13 +1,20 @@
-import React from 'react'
-
+import React,{useState} from 'react'
+import Heart from "react-animated-heart";
 const Footer = () => {
+    const [isClick, setClick] = useState(false);
+    function Explode(){
+        setClick(true);
+        setTimeout(() => {
+            setClick(false);
+        }, 1500);
+    }
   return (
     <div className='custom:px-[8vw] text-white  '>
         <div className='md:flex md:flex-col md:items-center'>       
-            <p className='md:p-2 custom:p-2'>Build | Integrate | Innovate </p>
-            <hr className='sm:w-[60vw]'/>
+            <p className='md:p-2 custom:p-2 sm:p-4'>Build | Integrate | Innovate </p>
+            <hr className='sm:w-[60vw] '/>
             <div className='md:flex md:flex-col custom:flex custom:p-4 custom:items-center'>
-                <div className='md:flex md:p-4 custom:flex-1 custom:flex md:justify-center'>
+                <div className='sm:pb-8 md:flex md:p-4 custom:flex-1 custom:flex md:justify-center'>
                     <a target="_blank" href="https://www.linkedin.com/company/humanoidxvitcc/mycompany/">
                         <svg className='md:px-2 custom:px-2' height="41" viewBox="0 0 40 41" fill="#178376" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M35.5556 0.505859C36.7343 0.505859 37.8648 0.974112 38.6983 1.80761C39.5317 2.6411 40 3.77156 40 4.9503V36.0614C40 37.2402 39.5317 38.3706 38.6983 39.2041C37.8648 40.0376 36.7343 40.5059 35.5556 40.5059H4.44444C3.2657 40.5059 2.13524 40.0376 1.30175 39.2041C0.468252 38.3706 0 37.2402 0 36.0614V4.9503C0 3.77156 0.468252 2.6411 1.30175 1.80761C2.13524 0.974112 3.2657 0.505859 4.44444 0.505859H35.5556ZM34.4444 34.9503V23.1725C34.4444 21.2512 33.6812 19.4085 32.3226 18.0499C30.964 16.6913 29.1213 15.9281 27.2 15.9281C25.3111 15.9281 23.1111 17.0836 22.0444 18.817V16.3503H15.8444V34.9503H22.0444V23.9947C22.0444 22.2836 23.4222 20.8836 25.1333 20.8836C25.9585 20.8836 26.7498 21.2114 27.3332 21.7949C27.9167 22.3783 28.2444 23.1696 28.2444 23.9947V34.9503H34.4444ZM8.62222 12.8614C9.61236 12.8614 10.562 12.4681 11.2621 11.7679C11.9622 11.0678 12.3556 10.1182 12.3556 9.12808C12.3556 7.06142 10.6889 5.37253 8.62222 5.37253C7.62619 5.37253 6.67095 5.7682 5.96664 6.4725C5.26234 7.17681 4.86667 8.13205 4.86667 9.12808C4.86667 11.1947 6.55556 12.8614 8.62222 12.8614ZM11.7111 34.9503V16.3503H5.55556V34.9503H11.7111Z" fill="#178376"/>
@@ -23,9 +30,12 @@ const Footer = () => {
                             <path d="M20 0C17.3736 0 14.7728 0.530159 12.3463 1.56021C9.91982 2.59025 7.71504 4.10002 5.85786 6.0033C2.10714 9.84714 0 15.0605 0 20.4965C0 29.556 5.74 37.2422 13.68 39.9683C14.68 40.1322 15 39.4968 15 38.9434V35.4795C9.46 36.7093 8.28 32.733 8.28 32.733C7.36 30.3554 6.06 29.72 6.06 29.72C4.24 28.4492 6.2 28.4902 6.2 28.4902C8.2 28.6337 9.26 30.6013 9.26 30.6013C11 33.7168 13.94 32.7945 15.08 32.3025C15.26 30.9703 15.78 30.0684 16.34 29.556C11.9 29.0436 7.24 27.2809 7.24 19.4717C7.24 17.1966 8 15.3724 9.3 13.9172C9.1 13.4047 8.4 11.2731 9.5 8.50606C9.5 8.50606 11.18 7.95266 15 10.5967C16.58 10.1458 18.3 9.92033 20 9.92033C21.7 9.92033 23.42 10.1458 25 10.5967C28.82 7.95266 30.5 8.50606 30.5 8.50606C31.6 11.2731 30.9 13.4047 30.7 13.9172C32 15.3724 32.76 17.1966 32.76 19.4717C32.76 27.3014 28.08 29.0231 23.62 29.5355C24.34 30.1709 25 31.4212 25 33.3274V38.9434C25 39.4968 25.32 40.1527 26.34 39.9683C34.28 37.2217 40 29.556 40 20.4965C40 17.8049 39.4827 15.1396 38.4776 12.6529C37.4725 10.1661 35.9993 7.90658 34.1421 6.0033C32.285 4.10002 30.0802 2.59025 27.6537 1.56021C25.2272 0.530159 22.6264 0 20 0Z" fill="#178376"/>
                         </svg>
                     </a>
-                </div>        
+                </div> 
+                <hr className='sm:w-[80vw]'/>       
                 <div className='md:flex md:justify-center md:items-center custom:flex custom:items-center custom:justify-end'>
-                    <pre className='center'>Made by </pre>
+                    <pre className='center'>Made with</pre>
+                    <button ><Heart isClick={isClick} onClick={Explode} /></button>
+                    <pre>By </pre>
                     <div className='flex items-center'>
                         <a target="_blank" href="https://www.linkedin.com/in/akkilesh-a-620561275/">
                             <svg className='px-2' xmlns="http://www.w3.org/2000/svg" height="30" viewBox="0 0 448 512">
