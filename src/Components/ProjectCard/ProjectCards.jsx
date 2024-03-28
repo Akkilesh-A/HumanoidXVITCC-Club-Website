@@ -9,7 +9,7 @@ const projects=[
 
 function createProjectCard(project){
     return (
-        <div className='m-4 sm:m-8 flex justify-center items-center text-white flex-col '>
+        <div className='hover:scale-110 duration-500 hover:duration-500 m-4 sm:m-8 flex justify-center items-center text-white flex-col '>
             <img loading="lazy" className='w-[18vw] sm:w-[100%] rounded-t-xl' src={project.imgURL} alt={project.title}/>
             <div className='flex flex-col items-center sm:w-[100%] w-[18vw] rounded-b-xl bg-[#178376] p-4'>
                 <h1 className='text-[1.5rem] font-bold'>{project.title}</h1>
@@ -23,7 +23,7 @@ const ProjectCards = () => {
   return (
     <div id="projects">
         <SectionHeading text1="Our" text2="Projects" ptext="" />
-        <div className='ml-[8vw] mr-[8vw] '>
+        <div className='ml-[8vw] mr-[8vw]'>
             <div className='sm:inline flex flex-wrap justify-center'>
                 {projects.map(createProjectCard)}
             </div>

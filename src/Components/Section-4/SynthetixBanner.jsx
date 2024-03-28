@@ -1,5 +1,7 @@
 import React from 'react'
 import SectionHeading from '../ExtraFeatures/SectionHeading'
+import SynthetixBannerPhoto from '../SynthetixBannerPhoto'
+
 const SynthetixBanner = () => {
   return (
     <div id="events" className='mb-[10vh]'>
@@ -7,7 +9,8 @@ const SynthetixBanner = () => {
         <div className='z-0 pb-12 text-white flex items-center'>
           <marquee behavior="scroll" direction="left" className='p-2 bg-[#178376] text-xl font-semibold'><h1>NEW EVENT ALERT!<span> </span>  NEW EVENT ALERT! NEW EVENT ALERT!   NEW EVENT ALERT!   NEW EVENT ALERT!   NEW EVENT ALERT!   NEW EVENT ALERT!    NEW EVENT ALERT!    NEW EVENT ALERT!    NEW EVENT ALERT!  NEW EVENT ALERT!    NEW EVENT ALERT!    NEW EVENT ALERT!</h1></marquee>
         </div>
-      <div className=' flex justify-center pb-8'>
+        <SynthetixBannerPhoto/>   
+      <div className=' flex justify-center p-8'>
             <div className='hover:scale-125 duration-500 hover:duration-500 texture-bg px-8 bg-[#178376]/90 flex lg:flex-col rounded-xl'>
                 <div className='flex  flex-col p-16 lg:p-8 lg:items-center'>
                     <h1 className='mxl:text-[4em] text-[3em] sm:text-[2em] font-bold text-white'>SYNTHETIX'24</h1>
@@ -23,6 +26,7 @@ const SynthetixBanner = () => {
                 </div>
             </div>
         </div>  
+             
         <hr className='ml-[8vw] w-[84vw] mt-[10vh]'/> 
     </div>
     
