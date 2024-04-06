@@ -16,18 +16,20 @@ const App = () => {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false)
-    }, 2500)
+    }, 5000)
   })
   return (
     <div className='whole-website bg-gradient-to-b from-[#178365] to-stone-900 '>
       {loading ? <div className='flex text-white flex-col w-[100%] items-center justify-center h-[100vh] sm:h-[80vh]'>
-            <ClimbingBoxLoader
+            {/* <ClimbingBoxLoader
             color={'#178376'}
             loading={loading}
             size={30}
             aria-label="Loading Spinner"
             data-testid="loader"
-          />
+          /> */}
+          <img src="/assets/Synthetix'24/loading_logo.gif" alt="Loading Synthetix'24 Logo" width="150" />
+          <h1 className='text-2xl'>Synthetix'24 is just around the corner...Do Register!</h1>
       </div> 
       :<div>
         <NavBar />

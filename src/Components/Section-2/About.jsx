@@ -43,12 +43,12 @@ const WhoWeAre = () => {
     <div id="about" className='text-white mb-[10vh] my-[2vh]'>
 
       {/* <hr className='ml-[8vw] w-[60vw] mb-[5vh]'/> */}
-      <hr className='ml-[8vw] w-[84vw] my-[5vh]'/> 
+      <hr className='ml-[8vw] w-[84vw] mt-[20vh] mb-[5vh]'/> 
 
 
       <div className='flex sm:flex-col items-center justify-center '>
         <div className='px-[8vw] flex flex-col  z-0 justify-center'>
-              <h1 className='text-[#178376] text-5xl pb-4 font-bold'>Who are we?</h1>
+              <h1 className='text-[#178376] text-5xl pb-4 font-bold'>About Us!</h1>
               <h3 className='sm:pl-8 text-white text-2xl'>We are a group of like minded individuals promoting <span className=' font-semibold'>Humanoid Robotics</span> in VIT,Chennai</h3>
         </div>
         <img src="assets/Logos/sheldon_logo.png" alt='WhoWeAre' className='duration-500 w-[20vw] sm:w-[50vw] mr-[10vw] object-cover' usemap="#image-map" />

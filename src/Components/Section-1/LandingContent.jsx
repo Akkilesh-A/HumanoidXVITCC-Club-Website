@@ -4,7 +4,7 @@ import MusicPlayer from '../ExtraFeatures/MusicPlayer'
 const LandingContent = () => {
   return (
     <div className='pt-[10vh] sm:h-[auto] text-white badges'>
-      <div className='sm:hidden flex blur h-[80%] absolute justify-center items-center w-[100%]'>
+      <div className='sm:hidden flex blur h-[50%] absolute justify-center items-center w-[100%]'>
           <video autoPlay muted loop>
             <source src="assets/reel.mp4" type="video/mp4" />
           </video>
@@ -19,7 +19,7 @@ const LandingContent = () => {
             <img loading="lazy" src='assets/robot.png' alt='robot' className='' />
           </div>
         </div>
-        <MusicPlayer/>
+        {/* <MusicPlayer/> */}
       </div> 
     </div>
   )
