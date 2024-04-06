@@ -28,6 +28,7 @@ const App = () => {
             aria-label="Loading Spinner"
             data-testid="loader"
           /> */}
+          <h1 className='text-2xl'>Building the website for you..</h1>
           <img src="/assets/Synthetix'24/loading_logo.gif" alt="Loading Synthetix'24 Logo" width="150" />
           <h1 className='text-2xl'>Synthetix'24 is just around the corner...Do Register!</h1>
       </div> 
