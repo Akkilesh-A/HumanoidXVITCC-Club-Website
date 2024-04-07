@@ -16,7 +16,7 @@ const App = () => {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false)
-    }, 1000)
+    }, 5000)
   })
   return (
     <div className='whole-website bg-gradient-to-b from-[#178365] to-stone-900 '>

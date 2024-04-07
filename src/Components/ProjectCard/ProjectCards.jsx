@@ -15,7 +15,7 @@ function createProjectCard(project){
     useEffect(()=>{
       const img = new Image();
       img.src = project.imgURL;
-      img.onload = () => {
+      img.onload = () => { 
         setImageLoaded(true)
       }
     },[project.imgURL,imageLoaded])
