@@ -16,7 +16,7 @@ const App = () => {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false)
-    }, 5000)
+    }, 1000)
   })
   return (
     <div className='whole-website bg-gradient-to-b from-[#178365] to-stone-900 '>
@@ -35,23 +35,13 @@ const App = () => {
       :<div>
         <NavBar />
         <LandingContent />
-        <Suspense fallback={<div className='flex text-white flex-col w-[100%] items-center justify-center'>
-            <ClimbingBoxLoader
-            color={'#178376'}
-            loading={loading}
-            size={30}
-            aria-label="Loading Spinner"
-            data-testid="loader"
-          />
-      </div> }> 
-          <About /> 
-        </Suspense> 
-          <ProjectCards /> 
-          <VideoPlayer />
-          <ImageCarousel />
-          <SynthetixBanner /> 
-          <Obs />
-          <Footer />       
+        <About /> 
+        <ProjectCards /> 
+        <VideoPlayer />
+        <ImageCarousel />
+        <SynthetixBanner /> 
+        <Obs />
+        <Footer />       
         </div>}
     </div>
   )

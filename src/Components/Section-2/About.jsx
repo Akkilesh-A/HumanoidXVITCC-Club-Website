@@ -1,4 +1,5 @@
-import React,{useState} from 'react'
+import React,{ useState,useEffect }  from 'react'
+import {Blurhash} from 'react-blurhash'
 
 const WhoWeAre = () => {
   
@@ -38,6 +39,16 @@ const WhoWeAre = () => {
   const [isElectrical,setElectrical]=useState(false);
   const [isManagement,setManagement]=useState(false);
   const [isSocialMedia,setSocialMedia]=useState(false);
+
+  const [imageLoaded,setImageLoaded] = useState(false);
+
+  useEffect(()=>{
+    const img = new Image();
+    img.src = "assets/Logos/sheldon_logo.png";
+    img.onload = () => {
+      setImageLoaded(true)
+    }
+  },[imageLoaded])
     
   return (
     <div id="about" className='text-white mb-[10vh] my-[2vh]'>
@@ -51,11 +62,11 @@ const WhoWeAre = () => {
               <h1 className='text-[#178376] text-5xl pb-4 font-bold'>About Us!</h1>
               <h3 className='sm:pl-8 text-white text-2xl'>We are a group of like minded individuals promoting <span className=' font-semibold'>Humanoid Robotics</span> in VIT,Chennai</h3>
         </div>
-        <img src="assets/Logos/sheldon_logo.png" alt='WhoWeAre' className='duration-500 w-[20vw] sm:w-[50vw] mr-[10vw] object-cover' usemap="#image-map" />
+        {!imageLoaded && <Blurhash className='w-[20vw] sm:w-[50vw] mr-[10vw] rounded-xl' hash="egK_auV@^+ozoJozRjj[ofkC~WozM{WBWWof%Ma|NGaywcWVIpoeay" width="100%" height="100%" resolutionX={32} resolutionY={32} punch={1} />}
+        {imageLoaded && <img src="assets/Logos/sheldon_logo.png" alt='WhoWeAre' className='duration-500 w-[20vw] sm:w-[50vw] mr-[10vw] object-cover' usemap="#image-map" />}
         <map name="image-map" onClick={alertTwitter}>
             <area alt="X logo" href="#" onClick={alertTwitter}  coords="100,100,10" shape="circle" />
         </map>
-        {/* <img src='assets/Logos/sheldon_logo.png' onClick={alertTwitter} alt='WhoWeAre' className='hover:scale-125 duration-500 hover:duration-500 w-[20vw] sm:w-[50vw] mr-[10vw] object-cover' /> */}
       </div>
       <hr className='ml-[8vw] w-[84vw] my-[5vh]'/> 
 
@@ -64,10 +75,14 @@ const WhoWeAre = () => {
 
       <div className='flex sm:flex-col ml-[8vw] w-[84vw] sm:h-[auto] justify-around items-center'>
         <div className='sm:order-1 flex w-[35vw] sm:w-[60vw] items-center justify-between '>
-          <img onMouseOver={setDesignTrue} onMouseOut={setDesignFalse} src='assets/Departments/design&automation.png' alt='Departments' className={isDesign?'duration-500 scale-[2] w-[6vw] sm:w-[10vw] h-auto':'hover:scale-[2]  scale-[1.5] duration-500 hover:duration-500  w-[6vw] sm:w-[10vw] h-auto' }/>
-          <img onMouseOver={setElectricalTrue} onMouseOut={setElectricalFalse} src='assets/Departments/electrical&programming.png' alt='Departments' className={isElectrical?'duration-500 scale-[2] w-[6vw] sm:w-[10vw] h-auto':'hover:scale-[2]  scale-[1.5] duration-500 hover:duration-500  w-[6vw] sm:w-[10vw] h-auto' } />
-          <img onMouseOver={setManagementTrue} onMouseOut={setManagementFalse} src='assets/Departments/management.png' alt='Departments' className={isManagement?'duration-500 scale-[2] w-[6vw] sm:w-[10vw] h-auto':'hover:scale-[2]  scale-[1.5] duration-500 hover:duration-500  w-[6vw] sm:w-[10vw] h-auto' } />
-          <img onMouseOver={setSocialMediaTrue} onMouseOut={setMediaFalse} src='assets/Departments/socialmedia.png' alt='Departments' className={isSocialMedia?'duration-500 scale-[2] w-[6vw] sm:w-[10vw] h-auto':'hover:scale-[2] scale-[1.5]  duration-500 hover:duration-500  w-[6vw] sm:w-[10vw] h-auto' } />                
+          {!imageLoaded && <Blurhash className='w-[20vw] sm:w-[50vw] mr-[10vw] rounded-xl' hash="egK_auV@^+ozoJozRjj[ofkC~WozM{WBWWof%Ma|NGaywcWVIpoeay" width="100%" height="100%" resolutionX={32} resolutionY={32} punch={1} />}
+          {imageLoaded && <img onMouseOver={setDesignTrue} onMouseOut={setDesignFalse} src='assets/Departments/design&automation.png' alt='Departments' className={isDesign?'duration-500 scale-[2] w-[6vw] sm:w-[10vw] h-auto':'hover:scale-[2]  scale-[1.5] duration-500 hover:duration-500  w-[6vw] sm:w-[10vw] h-auto' }/> }
+          {!imageLoaded && <Blurhash className='w-[20vw] sm:w-[50vw] mr-[10vw] rounded-xl' hash="egK_auV@^+ozoJozRjj[ofkC~WozM{WBWWof%Ma|NGaywcWVIpoeay" width="100%" height="100%" resolutionX={32} resolutionY={32} punch={1} />}
+          {imageLoaded && <img onMouseOver={setElectricalTrue} onMouseOut={setElectricalFalse} src='assets/Departments/electrical&programming.png' alt='Departments' className={isElectrical?'duration-500 scale-[2] w-[6vw] sm:w-[10vw] h-auto':'hover:scale-[2]  scale-[1.5] duration-500 hover:duration-500  w-[6vw] sm:w-[10vw] h-auto' } /> }
+          {!imageLoaded && <Blurhash className='w-[20vw] sm:w-[50vw] mr-[10vw] rounded-xl' hash="egK_auV@^+ozoJozRjj[ofkC~WozM{WBWWof%Ma|NGaywcWVIpoeay" width="100%" height="100%" resolutionX={32} resolutionY={32} punch={1} />}
+          {imageLoaded && <img onMouseOver={setManagementTrue} onMouseOut={setManagementFalse} src='assets/Departments/management.png' alt='Departments' className={isManagement?'duration-500 scale-[2] w-[6vw] sm:w-[10vw] h-auto':'hover:scale-[2]  scale-[1.5] duration-500 hover:duration-500  w-[6vw] sm:w-[10vw] h-auto' } /> }
+          {!imageLoaded && <Blurhash className='w-[20vw] sm:w-[50vw] mr-[10vw] rounded-xl' hash="egK_auV@^+ozoJozRjj[ofkC~WozM{WBWWof%Ma|NGaywcWVIpoeay" width="100%" height="100%" resolutionX={32} resolutionY={32} punch={1} />}
+          {imageLoaded &&  <img onMouseOver={setSocialMediaTrue} onMouseOut={setMediaFalse} src='assets/Departments/socialmedia.png' alt='Departments' className={isSocialMedia?'duration-500 scale-[2] w-[6vw] sm:w-[10vw] h-auto':'hover:scale-[2] scale-[1.5]  duration-500 hover:duration-500  w-[6vw] sm:w-[10vw] h-auto' } /> }            
         </div>
         <div className='flex flex-col pt-[5vh] z-0 text-white sm:mb-16 '>
           <h1 className='text-[#178376] text-5xl pb-4 font-bold'>What do we have?</h1>
@@ -90,8 +105,9 @@ const WhoWeAre = () => {
         <div className='px-[8vw] sm:pb-8 flex flex-col  z-0 justify-center'>
               <h1 className='text-[#178376] text-5xl pb-4 font-bold'>What do we do?</h1>
               <h3 className='sm:pl-8 text-white text-2xl'>Our mission is to innovate in humanoid robotics, creating many more bots for everyday community and home use.</h3>
-        </div>
-        <img src='assets/RobotAssets/robot hand.png' alt='WhoWeAre' className='w-[20vw] sm:ml-[10vw] sm:mt-[5vh] sm:w-[50vw] mr-[10vw] object-cover' />
+        </div>        
+        {!imageLoaded && <Blurhash className='w-[20vw] sm:w-[50vw] mr-[10vw] rounded-xl' hash="egK_auV@^+ozoJozRjj[ofkC~WozM{WBWWof%Ma|NGaywcWVIpoeay" width="100%" height="100%" resolutionX={32} resolutionY={32} punch={1} />}
+        {imageLoaded && <img src='assets/RobotAssets/robot hand.png' alt='WhoWeAre' className='w-[20vw] sm:ml-[10vw] sm:mt-[5vh] sm:w-[50vw] mr-[10vw] object-cover' /> }
       </div>
 
       <hr className='ml-[8vw] w-[84vw] my-[5vh]'/> 
