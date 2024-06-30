@@ -1,11 +1,18 @@
-# Official Website Starter Repo for HumanoidXVITC ClubeClub Website
-### Just clone the repo, make some edits and there you go, you have a good looking responsive club website
+# 🌟 Official Website Starter Repo for HumanoidXVITC Club 🌟
+
+### Just clone the repo, make some edits, and there you go, you have a good looking responsive club website! 🚀
 
 <br> 
 
-# How to run
-### Use <code>npm i</code> to install dependencies
-### Use <code>npm run dev</code> to run in [LocalHost:5173 Port](localhost:5173)
+## How to Run 🏃‍♂️
+
+1. **Install Dependencies:**
+   ```sh
+   npm i
+2. **Running it locally:**
+   ```sh
+   npm run dev
+3. **Visit localhost:5173**
 
 <br>
 
