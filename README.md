@@ -1,4 +1,4 @@
-# A React + Tailwind Club Website
+# Official Website Starter Repo for HumanoidXVITC ClubeClub Website
 ### Just clone the repo, make some edits and there you go, you have a good looking responsive club website
 
 <br> 
